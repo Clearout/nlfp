@@ -11,10 +11,9 @@ making it easier to stay updated on products posing a risk to health and safety.
 
 
 ## Contents
-Repositoriet inneholder følgende artifakter:
-* nlfp-public - Offentlig nettsted for NLFP
-* nlfp-admin - Administrasjonsgrensesnitt for myndighetene
-* nlfp-api - Åpent API
+* nlfp-public - Public website for NLFP
+* nlfp-admin - Administrative portal for the authorities
+* nlfp-api - Open API
 
 
 ## Contributing
