@@ -1,0 +1,17 @@
+# Java
+src/main/resources/public/
+target/
+
+# Frontend
+frontend/dist/
+frontend/node/
+frontend/node_modules/
+frontend/npm-debug.log
+frontend/target
+frontend/test-output
+frontend/test/e2e/reports
+frontend/test/unit/coverage
+frontend/yarn-error.log
+security/target/
+selenium-debug.log
+=3.0.0

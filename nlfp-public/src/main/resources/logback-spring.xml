@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- From Logback 1.1.10, HOSTNAME is no longer added eagerly. See https://jira.qos.ch/browse/LOGBACK-1221. -->
+    <property name="HOSTNAME" scope="context" value="${COMPUTERNAME}"/>
+    <property name="APP_NAME" scope="context" value="${APP_NAME}"/>
+    <property name="CONSOLE_LOG_PATTERN" scope="context" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} [%X{docRequestId}]: %msg%n"/>
+
+    <springProfile name="default">
+        <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+        <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="dev,test,prod,stage">
+        <appender name="jsonFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <file>${SAMBAS_HOME}/${APP_NAME}/logs/${APP_NAME}-log.json</file>
+            <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+                <!-- rollover daily -->
+                <fileNamePattern>${SAMBAS_HOME}/${APP_NAME}/logs/${APP_NAME}_%d{yyyy-MM-dd}.%i-log.json</fileNamePattern>
+                <!-- each file should be at most 100MB, keep 30 days worth of history, but at most 2GB -->
+                <maxFileSize>100MB</maxFileSize>
+                <maxHistory>30</maxHistory>
+                <totalSizeCap>2GB</totalSizeCap>
+            </rollingPolicy>
+            <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+                <includeMdcKeyName>docRequestId</includeMdcKeyName>
+            </encoder>
+        </appender>
+        <appender name="async-file" class="ch.qos.logback.classic.AsyncAppender">
+            <appender-ref ref="jsonFileAppender" />
+            <queueSize>10000</queueSize>
+            <discardingThreshold>-2</discardingThreshold>
+        </appender>
+        <root level="INFO">
+            <appender-ref ref="async-file"/>
+        </root>
+        <!-- logback via JMX ie. allows setting log levels runtime in spring-boot-admin -->
+        <jmxConfigurator/>
+    </springProfile>
+
+    <!-- disable faulty warning about Win prefs (see https://bugs.openjdk.java.net/browse/JDK-8139507) -->
+    <logger name ="java.util.prefs" level="OFF"/>
+
+</configuration>

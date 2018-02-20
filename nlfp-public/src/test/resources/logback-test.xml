@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- This log config is used for non-spring tests -->
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} [%X{docRequestId}]: %msg%n</pattern>
+            <!-- this quadruples logging throughput -->
+            <immediateFlush>false</immediateFlush>
+        </encoder>
+    </appender>
+
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="no.dsb" level="INFO" />
+    <!-- disable faulty warning about Win prefs (see https://bugs.openjdk.java.net/browse/JDK-8139507) -->
+    <logger name ="java.util.prefs" level="OFF"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+</configuration>

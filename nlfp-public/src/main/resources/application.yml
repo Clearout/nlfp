@@ -1,0 +1,80 @@
+info.version: @project.version@
+management:
+  context-path: /sysadmin
+  port: 8141
+  security:
+    enabled: false
+server:
+  context-path: /nlfp-public
+  port: 8041
+
+spring:
+  application:
+    name: NlfpPublic
+  boot:
+    admin:
+      # boot-admin is run by status-server project; if not running a warning will be emitted
+      url: http://localhost:9999/boot-admin
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  mvc:
+    servlet:
+      # We don't want to wait for initial request to initialize the servlet:
+      load-on-startup: 1
+
+security:
+  basic:
+    enabled: false
+  #TODO: Ignoring all paths until keycloak is configured
+  ignored: /** #/,/config,/status,/swagger-ui.html,/swagger-resources/**,/webjars/**,/v2/**
+  oauth2:
+    resource:
+      jwt:
+        key-value: |
+                  -----BEGIN PUBLIC KEY-----
+                  MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmO+jZRg7BT4hQ8M0f4nLxX3mgaO7M/SDWTa9YDI5V4YIzSlwgWl+LbGHxXf3BiDY+fT0zzRt+4/ezXaMZmYOf6TQ1hZgZ9bop07AFO/SvXej/ULzug13VzGmbNppOkZHl6JUX7bhUwxOV8GymjYiz72kBsnvYyliJVV+wt8oqrwBtYmlo/Ow55/CY5ycHw5Mq+RJbX93eV76zebYniby+psOvYVD2WlICoC+AJ68inZNCXKCfrUrD3H9ifrQe/lvEnegK2PGwPqLqvP4byhJyVFw0H+w/O+tbTHm5fFvfj6jI8rMESgVXJtxiiPrtPwAZknAb0q2b9VE22tkW/T69wIDAQAB
+                  -----END PUBLIC KEY-----
+
+jasypt:
+    encryptor:
+        password: ${JASYPT_ENCRYPTOR_PASSWORD}
+
+keycloak:
+  realm:
+  url:
+  clientId:
+
+environment: local
+
+### Everything above this line is for the default Spring profile.
+### Everything below this line is for specific Spring profiles / overrides for different environments.
+
+---
+
+spring:
+  profiles: dev
+  boot:
+    admin:
+      url:
+
+environment: development
+
+---
+spring:
+  profiles: test
+  boot:
+    admin:
+      url:
+
+environment: test
+
+
+---
+spring:
+  profiles: prod
+  boot:
+    admin:
+      url:
+
+environment: prod
