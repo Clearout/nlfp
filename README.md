@@ -3,7 +3,7 @@
 The main purpose of the project is to prevent damage to people and material by establishing a website 
 where quality assured information about dangerous products is published. 
 
-The project will be an extension of the current DSB website [Farlige Produkter](http:farligeprodukter.no)
+The project will be an extension of the current DSB website [Farlige Produkter](https://www.farligeprodukter.no/)
 containing the products DSB are responsible for. 
 The new website is a collaborative project for several authorities responsible for dangerous products in Norway.
 Assembling this information will give the Norwegian citizens one common site to go to for information about these dangerous products, 
