@@ -1,0 +1,18 @@
+# Random management port:
+management.port: 0
+
+spring:
+  boot:
+    admin:
+      client:
+        enabled: false
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        # Should be the same as in src/test/resources/security/public.key
+        key-value: |
+                  -----BEGIN PUBLIC KEY-----
+                  MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgFhzhTyqKmvNDuv2QWpYK2gh0dDdjszV/n9x6sOoOFHtAoEguf3FZxDjsDJDnLwV2RzHpSauJopyebQjDOWWoNNEUFj045AW+c0n2q/BBCjZj0GAir2eiZg87aKp6OMzXNBprqN56SELd7Jw1j7SuoA3q/Pxg/uAAohClfPelV7pAgMBAAE=
+                  -----END PUBLIC KEY-----
