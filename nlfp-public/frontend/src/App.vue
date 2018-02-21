@@ -1,23 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div id="app">
+
+        <app-nav/>
+        <div class="content">
+            <b-container>
+                <router-view/>
+            </b-container>
+        </div>
+
+    </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+    import NavBar from './components/NavBar.vue'
+
+    export default {
+        name: 'App',
+        components: {
+            'app-nav': NavBar
+        }
+    }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+    @import "~bootstrap/scss/bootstrap";
+    @import "assets/main";
 </style>

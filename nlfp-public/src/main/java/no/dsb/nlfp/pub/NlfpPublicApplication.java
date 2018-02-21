@@ -1,12 +1,10 @@
 package no.dsb.nlfp.pub;
 
-import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import com.ulisesbocchio.jasyptspringboot.annotation.EncryptablePropertySource;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.Ordered;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -18,10 +16,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import static springfox.documentation.builders.RequestHandlerSelectors.withClassAnnotation;
 
-@EnableResourceServer
 @EnableSwagger2
 @SpringBootApplication
-@EnableEncryptableProperties
 @EncryptablePropertySource(value = "classpath:application.yml")
 public class NlfpPublicApplication extends WebMvcConfigurerAdapter {
 

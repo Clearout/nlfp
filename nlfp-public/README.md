@@ -18,11 +18,11 @@ mvn clean install
 mvn spring-boot:run
 ``` 
 
-Open `http://localhost:8041/nlfp-public/`
+Open `http://localhost:8042/nlfp-public/`
 
 The API is documented using Swagger, and when running locally, the documentation is available at:
 
-	http://localhost:8041/nlfp-public/swagger-ui.html
+	http://localhost:8042/nlfp-public/swagger-ui.html
 
 ## Build setup frontend
 
@@ -37,7 +37,7 @@ cd frontend
 # install dependencies
 ./yarn install
 
-# to serve with hot reload at localhost:8090 (opens the app in your browser automatically)
+# to serve with hot reload at localhost:8091 (opens the app in your browser automatically)
 yarn && yarn dev
 
 # build for production with minification

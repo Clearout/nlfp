@@ -8,7 +8,7 @@ import router from './router'
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
-window.__BASEURL__ = '/nlfp-ui'
+window.__BASEURL__ = '/nlfp-public'
 
 /* eslint-disable no-new */
 new Vue({

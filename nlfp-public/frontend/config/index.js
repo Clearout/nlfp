@@ -26,13 +26,13 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    port: process.env.PORT || 8090,
+    port: process.env.PORT || 8091,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/nlfp-public': {
-        target: 'http://localhost:8041',
+        target: 'http://localhost:8042',
         changeOrigin: true
       }
     },

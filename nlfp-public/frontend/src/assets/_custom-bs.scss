@@ -1,0 +1,127 @@
+// Intermediate branding until design is done
+//
+// Color system
+//
+
+$white: #fff;
+$gray-100: #f3f3f3;
+$gray-200: #e7e7e7;
+$gray-300: #dbdbdb;
+$gray-400: #b8b8b8;
+$gray-500: #959595;
+$gray-600: #727272;
+$gray-700: #4f4f4f;
+$gray-800: #353535;
+$gray-900: #1A1A1A;
+$black: #000;
+
+$grays: (
+        100: $gray-100,
+        200: $gray-200,
+        300: $gray-300,
+        400: $gray-400,
+        500: $gray-500,
+        600: $gray-600,
+        700: $gray-700,
+        800: $gray-800,
+        900: $gray-900
+);
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #B55998; //Original BS: #6f42c1
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #ff5600; //Original BS: #fd7e14
+$yellow: #F0CB66; //Original BS: #ffc107
+$green: #14B28E; //Original BS: #28a745
+$teal: #20c997;
+$mint: #91C2AD;
+$cyan: #17a2b8;
+$coral: #D1697D;
+$petrol: #128396;
+$bluegray: #4A6C81;
+
+$colors: (
+        blue: $blue,
+        indigo: $indigo,
+        purple: $purple,
+        pink: $pink,
+        red: $red,
+        orange: $orange,
+        yellow: $yellow,
+        green: $green,
+        teal: $teal,
+        mint: $mint,
+        cyan: $cyan,
+        coral: $coral,
+        bluegray: $bluegray,
+        white: $white,
+        petrol: $petrol,
+        gray: $gray-600,
+        gray-dark: $gray-800
+);
+
+$theme-colors: (
+        primary: $petrol,
+        secondary: $gray-500,
+        success: $green,
+        info: $mint,
+        warning: $yellow,
+        danger: $orange,
+        light: $gray-100,
+        dark: $gray-800
+);
+
+$enable-shadows: true;
+$enable-rounded: false;
+
+$body-bg: $gray-100;
+
+// Forms
+
+$input-bg: $white;
+$input-disabled-bg: $gray-200;
+
+$input-color: $gray-700;
+$input-border-color: $gray-500;
+$input-btn-border-width: 2px; // For form controls and buttons
+$input-box-shadow: none;
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: $black;
+$input-focus-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+$input-focus-color: $input-color;
+
+$input-placeholder-color: $gray-600;
+
+$custom-select-focus-border-color: $gray-700;
+$custom-select-focus-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+$custom-file-focus-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+
+$form-feedback-valid-color: $gray-700;
+
+// Cards
+
+$card-spacer-y: .75rem;
+$card-spacer-x: 1.25rem;
+$card-border-width: 1px;
+$card-border-color: $bluegray;
+$card-cap-bg: rgba($black, .03);
+$card-bg: $white;
+
+$card-columns-count: 3;
+$card-columns-gap: 1.25rem;
+$card-columns-margin: $card-spacer-y;
+
+// Buttons
+
+$btn-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+$btn-active-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+$btn-focus-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+
+// Jumbotron
+$jumbotron-padding: 0.5rem;
+
+// Fonts
+//$font-family-sans-serif: 'Open Sans', 'Helvetica Neue', sans-serif;
