@@ -1,28 +1,22 @@
 <template>
-    <div id="app">
-
-        <app-nav/>
-        <div class="content">
-            <b-container>
-                <router-view/>
-            </b-container>
-        </div>
-
-    </div>
+  <div id="app">
+    <app-nav/>
+      <router-view/>
+  </div>
 </template>
 
 <script>
-    import NavBar from './components/NavBar.vue'
+  import NavBar from './components/NavBar.vue'
 
-    export default {
-        name: 'App',
-        components: {
-            'app-nav': NavBar
-        }
+  export default {
+    name: 'App',
+    components: {
+      'app-nav': NavBar
     }
+  }
 </script>
 
 <style lang="scss">
-    @import "~bootstrap/scss/bootstrap";
-    @import "assets/main";
+  @import "~bootstrap/scss/bootstrap";
+  @import "assets/main";
 </style>

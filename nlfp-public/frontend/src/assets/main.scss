@@ -21,6 +21,39 @@ $fa-font-path: "~font-awesome/fonts";
 }
 
 .primary-colors {
-  color: $petrol
+  color: $petrol;
+}
+
+.center {
+  grid-area: center;
+}
+.top {
+  grid-area: top;
+}
+.bottom {
+  grid-area: bottom;
+}
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: 
+    'top top top top top'
+    'left center center center right'
+    'bottom bottom bottom bottom bottom';
+  grid-gap: 10px;
+  padding: 10px;
+  height: 80vh;  
+}
+
+.grid-layout > div {
+  padding: 10px;
+  border: 1px solid gray;
 }
 
