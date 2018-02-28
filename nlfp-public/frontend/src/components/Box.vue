@@ -21,4 +21,7 @@ export default {
   border: 2px solid $bris-color;
   border-radius: 10px;
 }
+.dashboard-box:hover {
+  box-shadow: 0 0 0 0.1rem $bris-color;
+}
 </style>

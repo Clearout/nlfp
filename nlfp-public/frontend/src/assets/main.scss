@@ -43,7 +43,7 @@ $bris-color: #e25923;
 
 .grid-layout {
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: 3fr 8fr 1fr;
   grid-template-areas: 
     'top top top top top'
     'left center center center right'
@@ -52,9 +52,6 @@ $bris-color: #e25923;
   padding: 10px;
   height: 80vh;  
 }
-
 .grid-layout > div {
   padding: 10px;
-  border: 1px solid $bris-color;
 }
-

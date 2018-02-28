@@ -10,7 +10,7 @@ module.exports = {
     index: path.resolve(__dirname, '../../target/classes/public/index.html'),
     assetsRoot: path.resolve(__dirname, '../../target/classes/public'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/nlfp-public/',
+    assetsPublicPath: '/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -31,7 +31,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/nlfp-public': {
+      '/': {
         target: 'http://localhost:8042',
         changeOrigin: true
       }

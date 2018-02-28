@@ -27,7 +27,7 @@ public class PingIntegrationTest {
     int localManagementPort;
 
     protected String getRootUri() {
-        return "http://localhost:" + port + "/nlfp-public";
+        return "http://localhost:" + port + "/";
     }
 
     private String pingUrl() {

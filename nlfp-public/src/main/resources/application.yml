@@ -5,7 +5,7 @@ management:
   security:
     enabled: false
 server:
-  context-path: /nlfp-public
+  context-path: /
   port: 8042
 
 spring:

@@ -7,7 +7,7 @@ import Report from '@/components/Report'
 Vue.use(Router)
 
 export default new Router({
-  base: '/nlfp-public',
+  base: '/',
   mode: 'history',
   routes: [
     {

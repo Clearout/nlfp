@@ -1,7 +1,7 @@
 <template>
 <div class="grid-layout">
   <div class="top">
-
+    <search-box placeholder="Leter du etter noe?"></search-box>
   </div>
   <div class="center">
     <div class="dashboard-grid">
@@ -16,10 +16,11 @@
 
 <script>
 import Box from './Box.vue';
+import SearchBox from './SearchBox';
 
 export default {
   name: 'Dashboard',
-  components: { Box },
+  components: { Box, SearchBox },
   data () {
     return {
       msg: 'Dashboard',
@@ -29,7 +30,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);

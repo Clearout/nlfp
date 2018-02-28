@@ -32,7 +32,7 @@ public class NlfpPublicApplication extends WebMvcConfigurerAdapter {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-            .title("DSB NLFP API")
+            .title("DSB BRIS API")
             .description("")
             .version("v1")
             .build();
