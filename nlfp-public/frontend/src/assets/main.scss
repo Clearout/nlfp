@@ -2,6 +2,7 @@
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 @import './custom-bs';
+$bris-color: #e25923;
 
 .form-control {
   &.is-invalid, &.is-valid {
@@ -54,6 +55,6 @@ $fa-font-path: "~font-awesome/fonts";
 
 .grid-layout > div {
   padding: 10px;
-  border: 1px solid gray;
+  border: 1px solid $bris-color;
 }
 

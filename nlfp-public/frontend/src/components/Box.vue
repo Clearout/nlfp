@@ -11,12 +11,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import '../assets/main.scss';
+
 .dashboard-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid firebrick;
-  border-width: 2px 2px 2px 2px;
+  border: 2px solid $bris-color;
+  border-radius: 10px;
 }
 </style>
