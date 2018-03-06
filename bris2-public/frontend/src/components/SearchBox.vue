@@ -8,7 +8,7 @@
             v-bind:placeholder="placeholder"
             class="searchbox searcharea">
           </b-form-input>
-          <b-btn class="searchbutton searcharea">
+          <b-btn class="searchbutton searcharea" v-on:click="ping">
             <i class="fa fa-search search-icon"></i>
           </b-btn>
       </b-col>
@@ -16,12 +16,22 @@
 </template>
 
 <script>
+import ElasticClient from '../elastic/elasticClient';
+
 export default {
   name: 'search-box',
   props: ['placeholder', 'initalSearch'],
-  data () {
+  data() {
     return {
       data: ''
+    }
+  },
+  methods: {
+    ping() {
+      if (!this.client) {
+        this.client = new ElasticClient();
+      }
+      this.client.search();
     }
   }
 }

@@ -19,7 +19,7 @@ import static springfox.documentation.builders.RequestHandlerSelectors.withClass
 @EnableSwagger2
 @SpringBootApplication
 @EncryptablePropertySource(value = "classpath:application.yml")
-public class NlfpPublicApplication extends WebMvcConfigurerAdapter {
+public class Bris2PublicApplication extends WebMvcConfigurerAdapter {
 
     @Bean
     Docket newsApi() {
@@ -46,6 +46,6 @@ public class NlfpPublicApplication extends WebMvcConfigurerAdapter {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(NlfpPublicApplication.class, args);
+        SpringApplication.run(Bris2PublicApplication.class, args);
     }
 }

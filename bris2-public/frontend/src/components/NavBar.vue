@@ -37,18 +37,18 @@
 
   .masthead { 
     background-color: $white;
-    border-bottom: 1px solid $gray-300;
+    border-bottom: 1px solid $gray-500;
     a.navbar-brand {
-      color: gray;
+      color: $gray-700;
     }
     a.navbar-brand:hover {      
-      color:firebrick;
+      color: $bris-color;
     }    
     a.navbar-brand:active {
-      color:firebrick;
+      color: $bris-color;
     }
     a.navbar-brand:focus {
-      color:firebrick;
+      color: $bris-color;
     }
   }
 </style>

@@ -10,7 +10,7 @@ server:
 
 spring:
   application:
-    name: NlfpPublic
+    name: Bris2Public
   boot:
     admin:
       # boot-admin is run by status-server project; if not running a warning will be emitted
