@@ -8,10 +8,25 @@ export default class Filter {
 
   buildFilter() {
     let filter = {
-      [this.type]: {
-        [this.field]: this.value
+      bool: {
+        [this.modifier]: []
       }
     };
+    if (this.value.constructor === Array) {
+      this.value.forEach(value => {
+        filter.bool[this.modifier].push({
+          [this.type]: {
+            [this.field]: value
+          }
+        });
+      });
+    } else {
+      filter.bool[this.modifier].push({
+        [this.type]: {
+          [this.field]: this.value
+        }
+      });
+    }
     return filter;
   }
 }

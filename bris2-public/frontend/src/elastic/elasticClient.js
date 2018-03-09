@@ -17,33 +17,31 @@ export default class ElasticClient {
   }
 
   search(query) {
-    let filter = new Filter(
-      filters.modifier.must,
-      filters.type.term,
-      filters.location.fylke,
-      'rogaland'
-    );
+    let filter = new Filter(filters.modifier.should, filters.type.term, filters.location.fylke, [
+      'rogaland',
+      'hordaland'
+    ]);
     query = new Query();
     query.addFilter(filter);
     let hits;
-    this.client.search(
-      {
+    this.client
+      .search({
         index: index,
         type: type,
         body: {
           query: query.buildQuery()
         }
-      }
-    ).then(
-      function(response) {
-        hits = response.hits.hits;
-      },
-      function(error) {
-        console.trace(error.message);
-      }
-    );
+      })
+      .then(
+        function(response) {
+          hits = response.hits.hits;
+        },
+        function(error) {
+          console.trace(error.message);
+        }
+      );
     console.log(filter);
-    console.log(JSON.stringify(filter.buildFilter()));
+    console.log(JSON.stringify(filter.buildFilter(), null, 2));
     return hits;
   }
 }

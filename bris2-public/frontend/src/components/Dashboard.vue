@@ -1,7 +1,7 @@
 <template>
 <div class="grid-layout">
   <div class="top">
-    <search-box placeholder="Leter du etter noe?"></search-box>
+    <search-box placeholder="Leter du etter noe?" initialSearch=""></search-box>
   </div>
   <div class="center">
     <div class="dashboard-grid">
@@ -21,13 +21,13 @@ import SearchBox from './SearchBox';
 export default {
   name: 'Dashboard',
   components: { Box, SearchBox },
-  data () {
+  data() {
     return {
       msg: 'Dashboard',
-      boxes: [1,2,3,4,5,6]
-    }
+      boxes: [1, 2, 3, 4, 5, 6]
+    };
   }
-}
+};
 </script>
 
 <style scoped lang="scss">

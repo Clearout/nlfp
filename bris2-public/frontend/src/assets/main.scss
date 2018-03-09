@@ -3,6 +3,7 @@ $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 @import './custom-bs';
 $bris-color: #e25923;
+$gray-100: $gray-100;
 
 .form-control {
   &.is-invalid, &.is-valid {
@@ -40,7 +41,9 @@ $bris-color: #e25923;
 .right {
   grid-area: right;
 }
-
+.filter-tab {
+  margin-left: 20vw;
+}
 .grid-layout {
   display: grid;
   grid-template-rows: 3fr 8fr 1fr;

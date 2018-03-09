@@ -31,7 +31,7 @@
     }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   @import "~bootstrap/scss/bootstrap";
   @import "../assets/main";
 

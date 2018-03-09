@@ -3,7 +3,9 @@ import Filter from './filter';
 export default class Query {
   constructor() {
     this.query = {
-      bool: {}
+      bool: {
+        must: []
+      }
     };
     this.filters = [];
   }
@@ -17,10 +19,10 @@ export default class Query {
   buildQuery() {
     this.filters.forEach(filter => {
       if (filter.constructor === Filter) {
-        if (this.query.bool[filter.modifier] == null) {
+        /* if (this.query.bool[filter.modifier] == null) {
           this.query.bool[filter.modifier] = [];
-        }
-        this.query.bool[filter.modifier].push(filter.buildFilter());
+        } */
+        this.query.bool.must.push(filter.buildFilter());
       } else {
         console.log(filter, ' is not a Filter and is omitted from this query ', this.query);
       }
