@@ -27,12 +27,7 @@ export default {
     };
   },
   methods: {
-    ping() {
-      if (!this.client) {
-        this.client = new ElasticClient();
-      }
-      this.client.search();
-    }
+    ping() {}
   }
 };
 </script>

@@ -4,6 +4,7 @@
   },
   "location": {
     "fylke": "indexed.oppdrag.adresse.kommune.fylke.fylkenavn",
+    "kommune": "indexed.oppdrag.adresse.kommune.kommunenavn",
     "brannvesen": "indexed.oppdrag.brannvesenNavnForGruppering.not_analyzed"
   },
   "modifier": {

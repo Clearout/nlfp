@@ -58,3 +58,24 @@ $gray-100: $gray-100;
 .grid-layout > div {
   padding: 10px;
 }
+.ui {
+  border-color: $bris-color !important;
+  border-radius: 0 !important;
+  > .menu {
+    border-color: $bris-color !important;
+    border-radius: 0 !important;
+  }
+  .label > .delete.icon:after {
+    content: 'x';
+    color: #000;
+    font-size: 17px;
+    font-style: normal;
+  }
+  .fluid.dropdown > .dropdown.icon {
+    color: $bris-color;
+  }
+  > .default.text {
+    color: $gray-600 !important;
+    font-weight: 500;
+  }
+}

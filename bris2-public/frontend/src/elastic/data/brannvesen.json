@@ -1,0 +1,1088 @@
+{  
+  "brannvesen":[  
+     {  
+        "key":"uten brannvesenressurs",
+        "doc_count":109695
+     },
+     {  
+        "key":"oslo brann- og redningsetat",
+        "doc_count":38777
+     },
+     {  
+        "key":"drammensregionens brannvesen iks",
+        "doc_count":13283
+     },
+     {  
+        "key":"asker og bærum brannvesen iks",
+        "doc_count":12194
+     },
+     {  
+        "key":"rogaland brann og redning iks",
+        "doc_count":10188
+     },
+     {  
+        "key":"nedre romerike brann- og redningsvesen iks",
+        "doc_count":8831
+     },
+     {  
+        "key":"trøndelag brann- og redningstjeneste iks",
+        "doc_count":8526
+     },
+     {  
+        "key":"bergen brannvesen",
+        "doc_count":8358
+     },
+     {  
+        "key":"kristiansandsregionen brann og redning iks",
+        "doc_count":7891
+     },
+     {  
+        "key":"follo brannvesen iks",
+        "doc_count":5649
+     },
+     {  
+        "key":"vestfold interkommunale brannvesen iks",
+        "doc_count":5649
+     },
+     {  
+        "key":"røyken brann- og redning",
+        "doc_count":5320
+     },
+     {  
+        "key":"øvre romerike brann og redning iks",
+        "doc_count":5054
+     },
+     {  
+        "key":"tromsø brann og redning",
+        "doc_count":4504
+     },
+     {  
+        "key":"østre agder brannvesen",
+        "doc_count":4407
+     },
+     {  
+        "key":"kongsberg brann- og redning",
+        "doc_count":4260
+     },
+     {  
+        "key":"sandefjord brannvesen",
+        "doc_count":4171
+     },
+     {  
+        "key":"hedmarken brannvesen",
+        "doc_count":3914
+     },
+     {  
+        "key":"fredrikstad brann- og redningskorps",
+        "doc_count":3083
+     },
+     {  
+        "key":"ringsaker brannvesen",
+        "doc_count":2870
+     },
+     {  
+        "key":"haugesund brannvesen",
+        "doc_count":2801
+     },
+     {  
+        "key":"mosseregionens interkommunale brann- og feiervesen",
+        "doc_count":2741
+     },
+     {  
+        "key":"ålesund brannvesen kf",
+        "doc_count":2689
+     },
+     {  
+        "key":"larvik brannvesen",
+        "doc_count":2634
+     },
+     {  
+        "key":"notodden brannvesen",
+        "doc_count":2575
+     },
+     {  
+        "key":"brannvesenet sør iks",
+        "doc_count":2506
+     },
+     {  
+        "key":"salten brann iks",
+        "doc_count":2460
+     },
+     {  
+        "key":"lillehammer region brannvesen",
+        "doc_count":2442
+     },
+     {  
+        "key":"skien brann- og feievesen",
+        "doc_count":2418
+     },
+     {  
+        "key":"molde brannvesen",
+        "doc_count":2139
+     },
+     {  
+        "key":"indre østfold brann og redning iks",
+        "doc_count":2084
+     },
+     {  
+        "key":"harstad brann- og redning",
+        "doc_count":2026
+     },
+     {  
+        "key":"lindås og meland brann og redning",
+        "doc_count":1926
+     },
+     {  
+        "key":"midt-hedmark brann-og redningsvesen iks",
+        "doc_count":1875
+     },
+     {  
+        "key":"sarpsborg brann- og feievesen",
+        "doc_count":1799
+     },
+     {  
+        "key":"ringerike brann- og redningstjeneste",
+        "doc_count":1787
+     },
+     {  
+        "key":"hammerfest brann og redning",
+        "doc_count":1746
+     },
+     {  
+        "key":"porsgrunn brann- og feiervesen",
+        "doc_count":1699
+     },
+     {  
+        "key":"grimstad brann- og feiertjenesten",
+        "doc_count":1670
+     },
+     {  
+        "key":"hurum brannvesen",
+        "doc_count":1626
+     },
+     {  
+        "key":"gjøvik brannvesen",
+        "doc_count":1477
+     },
+     {  
+        "key":"glåmdal brannvesen iks",
+        "doc_count":1347
+     },
+     {  
+        "key":"innherred brann og redning",
+        "doc_count":1338
+     },
+     {  
+        "key":"karmøy brann- og redningsvesen",
+        "doc_count":1304
+     },
+     {  
+        "key":"brannvesenet midt iks",
+        "doc_count":1254
+     },
+     {  
+        "key":"kristiansund brann og redning",
+        "doc_count":1097
+     },
+     {  
+        "key":"alta brann- og redningskorps",
+        "doc_count":1088
+     },
+     {  
+        "key":"halden brannvesen",
+        "doc_count":1020
+     },
+     {  
+        "key":"målselv brannvesen",
+        "doc_count":919
+     },
+     {  
+        "key":"ofoten brann iks",
+        "doc_count":906
+     },
+     {  
+        "key":"namsos brann og redningsvesen",
+        "doc_count":903
+     },
+     {  
+        "key":"askøy brann og redning",
+        "doc_count":872
+     },
+     {  
+        "key":"flora brannvesen",
+        "doc_count":872
+     },
+     {  
+        "key":"sogn brann og redning iks",
+        "doc_count":866
+     },
+     {  
+        "key":"lunner og gran brann og redning",
+        "doc_count":813
+     },
+     {  
+        "key":"hallingdal brann- og redningsteneste iks",
+        "doc_count":809
+     },
+     {  
+        "key":"stjørdal brann- og redningstjeneste",
+        "doc_count":787
+     },
+     {  
+        "key":"sel brann- og redningsvesen",
+        "doc_count":771
+     },
+     {  
+        "key":"kvam brann og redning",
+        "doc_count":769
+     },
+     {  
+        "key":"sør-varanger brannvesen",
+        "doc_count":738
+     },
+     {  
+        "key":"setesdal brannvesen iks",
+        "doc_count":735
+     },
+     {  
+        "key":"flekkefjord brannvesen",
+        "doc_count":705
+     },
+     {  
+        "key":"vest-telemark brannvern",
+        "doc_count":703
+     },
+     {  
+        "key":"brann- og redningstjenesten i rana",
+        "doc_count":688
+     },
+     {  
+        "key":"vikna brannvesen",
+        "doc_count":688
+     },
+     {  
+        "key":"hol brannvesen",
+        "doc_count":675
+     },
+     {  
+        "key":"fosen brann og redningstjeneste iks",
+        "doc_count":672
+     },
+     {  
+        "key":"bremanger brannvern",
+        "doc_count":655
+     },
+     {  
+        "key":"modum brannvesen",
+        "doc_count":639
+     },
+     {  
+        "key":"røros brann og redningstjeneste",
+        "doc_count":628
+     },
+     {  
+        "key":"tysvær brannvesen",
+        "doc_count":616
+     },
+     {  
+        "key":"nord-aurdal brannvesen",
+        "doc_count":605
+     },
+     {  
+        "key":"midt-gudbrandsdal brannvesen",
+        "doc_count":602
+     },
+     {  
+        "key":"os brann- og redningsvesen",
+        "doc_count":598
+     },
+     {  
+        "key":"raufoss brannvesen",
+        "doc_count":597
+     },
+     {  
+        "key":"orkdal brann- og redningsvesen",
+        "doc_count":585
+     },
+     {  
+        "key":"førde brann- og feiervesen",
+        "doc_count":574
+     },
+     {  
+        "key":"bamble brannvesen",
+        "doc_count":546
+     },
+     {  
+        "key":"bømlo brannvesen",
+        "doc_count":544
+     },
+     {  
+        "key":"midt-telemark brann- og redningstjeneste",
+        "doc_count":541
+     },
+     {  
+        "key":"eigersund brannvesen",
+        "doc_count":538
+     },
+     {  
+        "key":"porsanger brannvesen",
+        "doc_count":532
+     },
+     {  
+        "key":"jevnaker brann- og redning",
+        "doc_count":525
+     },
+     {  
+        "key":"kragerø brannvesen",
+        "doc_count":494
+     },
+     {  
+        "key":"vågå brannvesen",
+        "doc_count":487
+     },
+     {  
+        "key":"vefsn brann og redning",
+        "doc_count":485
+     },
+     {  
+        "key":"sortland brann og redning",
+        "doc_count":479
+     },
+     {  
+        "key":"nordre land brannvesen",
+        "doc_count":474
+     },
+     {  
+        "key":"søndre land brannvesen",
+        "doc_count":468
+     },
+     {  
+        "key":"sotra brannvern iks",
+        "doc_count":463
+     },
+     {  
+        "key":"stord brann og redning",
+        "doc_count":458
+     },
+     {  
+        "key":"salangen brannvesen",
+        "doc_count":453
+     },
+     {  
+        "key":"rakkestad brannvesen",
+        "doc_count":452
+     },
+     {  
+        "key":"kvinnherad brann og redning",
+        "doc_count":436
+     },
+     {  
+        "key":"voss brannvern",
+        "doc_count":435
+     },
+     {  
+        "key":"gauldal brann og redning iks",
+        "doc_count":431
+     },
+     {  
+        "key":"lenvik brannvesen",
+        "doc_count":427
+     },
+     {  
+        "key":"nedre hallingdal brann og redningstjeneste",
+        "doc_count":424
+     },
+     {  
+        "key":"lesja og dovre brannvesen",
+        "doc_count":422
+     },
+     {  
+        "key":"kvæfjord brannvesen",
+        "doc_count":416
+     },
+     {  
+        "key":"gulen og masfjorden brann og redning",
+        "doc_count":412
+     },
+     {  
+        "key":"lofoten brann- og redningsvesen",
+        "doc_count":412
+     },
+     {  
+        "key":"odda og ullensvang brann og redning",
+        "doc_count":399
+     },
+     {  
+        "key":"østre toten brannvesen",
+        "doc_count":378
+     },
+     {  
+        "key":"nærøy brann og redningsvesen",
+        "doc_count":377
+     },
+     {  
+        "key":"gloppen brannvesen",
+        "doc_count":373
+     },
+     {  
+        "key":"hå brannvesen",
+        "doc_count":360
+     },
+     {  
+        "key":"frøya brannvesen",
+        "doc_count":350
+     },
+     {  
+        "key":"nord-troms brannvesen",
+        "doc_count":350
+     },
+     {  
+        "key":"osterøy brann og redning",
+        "doc_count":349
+     },
+     {  
+        "key":"namdal brann og redningsvesen",
+        "doc_count":345
+     },
+     {  
+        "key":"sveio brann- og redningsvesen",
+        "doc_count":345
+     },
+     {  
+        "key":"vindafjord brann og redning",
+        "doc_count":344
+     },
+     {  
+        "key":"vestnes brannvesen",
+        "doc_count":342
+     },
+     {  
+        "key":"brannvesenet i kautokeino",
+        "doc_count":336
+     },
+     {  
+        "key":"bardu brann- og redning",
+        "doc_count":317
+     },
+     {  
+        "key":"brønnøy brann- og redningstjeneste",
+        "doc_count":317
+     },
+     {  
+        "key":"fræna brannvesen",
+        "doc_count":317
+     },
+     {  
+        "key":"høyanger brannvesen",
+        "doc_count":314
+     },
+     {  
+        "key":"vadsø brannvesen",
+        "doc_count":313
+     },
+     {  
+        "key":"lom og skjåk brannvesen",
+        "doc_count":305
+     },
+     {  
+        "key":"ulstein brannvesen",
+        "doc_count":305
+     },
+     {  
+        "key":"vågan brannvesen",
+        "doc_count":303
+     },
+     {  
+        "key":"etne brannvesen",
+        "doc_count":302
+     },
+     {  
+        "key":"hitra brannvesen",
+        "doc_count":302
+     },
+     {  
+        "key":"sør-aurdal brannvesen",
+        "doc_count":301
+     },
+     {  
+        "key":"årdal brannvesen",
+        "doc_count":301
+     },
+     {  
+        "key":"ørsta brann og redning",
+        "doc_count":298
+     },
+     {  
+        "key":"sauda brannvesen",
+        "doc_count":297
+     },
+     {  
+        "key":"alstahaug brannvesen",
+        "doc_count":288
+     },
+     {  
+        "key":"hadsel brann og redning",
+        "doc_count":288
+     },
+     {  
+        "key":"tinn brannvesen",
+        "doc_count":286
+     },
+     {  
+        "key":"herøy brannvern",
+        "doc_count":281
+     },
+     {  
+        "key":"vågsøy brann og redningskorps",
+        "doc_count":281
+     },
+     {  
+        "key":"eidskog brannvesen",
+        "doc_count":278
+     },
+     {  
+        "key":"nord-odal brannvesen",
+        "doc_count":274
+     },
+     {  
+        "key":"hasvik brann og redning",
+        "doc_count":271
+     },
+     {  
+        "key":"flesberg brannvesen",
+        "doc_count":268
+     },
+     {  
+        "key":"samnanger brannvesen",
+        "doc_count":268
+     },
+     {  
+        "key":"øygarden brannvesen",
+        "doc_count":265
+     },
+     {  
+        "key":"sula brannvesen",
+        "doc_count":263
+     },
+     {  
+        "key":"kvalsund brann og redning",
+        "doc_count":262
+     },
+     {  
+        "key":"strand brannvesen",
+        "doc_count":260
+     },
+     {  
+        "key":"nesseby brannvesen",
+        "doc_count":259
+     },
+     {  
+        "key":"austevoll brann- og redningsteneste",
+        "doc_count":258
+     },
+     {  
+        "key":"kárášjoga cáskádanveahka/karasjok brannvesen",
+        "doc_count":248
+     },
+     {  
+        "key":"rauma brannvesen",
+        "doc_count":237
+     },
+     {  
+        "key":"tana brannvesen",
+        "doc_count":237
+     },
+     {  
+        "key":"eid brannvesen",
+        "doc_count":235
+     },
+     {  
+        "key":"skaun brann- og redningsvesen",
+        "doc_count":231
+     },
+     {  
+        "key":"sunndal brannvesen",
+        "doc_count":230
+     },
+     {  
+        "key":"volda brann og redning",
+        "doc_count":227
+     },
+     {  
+        "key":"giske brannvesen",
+        "doc_count":225
+     },
+     {  
+        "key":"øystre slidre brannvesen",
+        "doc_count":224
+     },
+     {  
+        "key":"radøy brannvern",
+        "doc_count":223
+     },
+     {  
+        "key":"selbu brannvesen",
+        "doc_count":221
+     },
+     {  
+        "key":"sør-odal brann og redningsvesen",
+        "doc_count":221
+     },
+     {  
+        "key":"vardø brann- og redningskorps",
+        "doc_count":221
+     },
+     {  
+        "key":"stryn brannvesen",
+        "doc_count":218
+     },
+     {  
+        "key":"suldal brann- og redningsvesen",
+        "doc_count":217
+     },
+     {  
+        "key":"stranda brannvern",
+        "doc_count":216
+     },
+     {  
+        "key":"balsfjord brann og redning",
+        "doc_count":213
+     },
+     {  
+        "key":"evenes og tjeldsund brann og redningsvesen",
+        "doc_count":213
+     },
+     {  
+        "key":"gaular brann og redningsvesen",
+        "doc_count":213
+     },
+     {  
+        "key":"naustdal brannvesen",
+        "doc_count":212
+     },
+     {  
+        "key":"nore og uvdal brannvesen",
+        "doc_count":212
+     },
+     {  
+        "key":"skånland brannvesen",
+        "doc_count":212
+     },
+     {  
+        "key":"rollag brannvesen",
+        "doc_count":210
+     },
+     {  
+        "key":"lund brannvesen",
+        "doc_count":209
+     },
+     {  
+        "key":"sokndal brann og redningsvesen",
+        "doc_count":207
+     },
+     {  
+        "key":"andøy brannvesen",
+        "doc_count":206
+     },
+     {  
+        "key":"fusa brann og redning",
+        "doc_count":204
+     },
+     {  
+        "key":"haram brannvern",
+        "doc_count":204
+     },
+     {  
+        "key":"tysnes brann og redning",
+        "doc_count":204
+     },
+     {  
+        "key":"nordkapp brannvesen",
+        "doc_count":199
+     },
+     {  
+        "key":"fitjar brannvesen",
+        "doc_count":198
+     },
+     {  
+        "key":"austrheim brannvern",
+        "doc_count":197
+     },
+     {  
+        "key":"lebesby brannvesen",
+        "doc_count":196
+     },
+     {  
+        "key":"nesset brannvesen",
+        "doc_count":195
+     },
+     {  
+        "key":"hemne brannvesen",
+        "doc_count":192
+     },
+     {  
+        "key":"lærdal brann og redning",
+        "doc_count":192
+     },
+     {  
+        "key":"hareid brannvesen",
+        "doc_count":189
+     },
+     {  
+        "key":"vang brannvesen",
+        "doc_count":189
+     },
+     {  
+        "key":"askvoll brannvern",
+        "doc_count":188
+     },
+     {  
+        "key":"skodje kommunale brannvesen",
+        "doc_count":187
+     },
+     {  
+        "key":"aurland brannvesen",
+        "doc_count":185
+     },
+     {  
+        "key":"sirdal brann -og redningsvesen",
+        "doc_count":185
+     },
+     {  
+        "key":"sørreisa og dyrøy brannvesen",
+        "doc_count":180
+     },
+     {  
+        "key":"vaksdal brannvern",
+        "doc_count":180
+     },
+     {  
+        "key":"fjaler brannvesen",
+        "doc_count":179
+     },
+     {  
+        "key":"snillfjord brann- og redningsvesen",
+        "doc_count":176
+     },
+     {  
+        "key":"båtsfjord brannvesen",
+        "doc_count":172
+     },
+     {  
+        "key":"frosta brannvesen",
+        "doc_count":171
+     },
+     {  
+        "key":"ibestad brannvesen",
+        "doc_count":168
+     },
+     {  
+        "key":"sykkylven brann- og redningskorps",
+        "doc_count":166
+     },
+     {  
+        "key":"åsnes brannvesen",
+        "doc_count":165
+     },
+     {  
+        "key":"leirfjord brannvesen",
+        "doc_count":162
+     },
+     {  
+        "key":"øksnes brannvesen",
+        "doc_count":162
+     },
+     {  
+        "key":"jølster brannvesen",
+        "doc_count":159
+     },
+     {  
+        "key":"jondal brannvesen",
+        "doc_count":157
+     },
+     {  
+        "key":"herøy brannvesen",
+        "doc_count":156
+     },
+     {  
+        "key":"åmot brann og redningsvesen",
+        "doc_count":154
+     },
+     {  
+        "key":"hemnes brannvesen",
+        "doc_count":153
+     },
+     {  
+        "key":"berlevåg brannvesen",
+        "doc_count":152
+     },
+     {  
+        "key":"granvin brannvesen",
+        "doc_count":151
+     },
+     {  
+        "key":"holtålen brannvesen",
+        "doc_count":146
+     },
+     {  
+        "key":"modalen brannvesen",
+        "doc_count":144
+     },
+     {  
+        "key":"hornindal brannvesen",
+        "doc_count":143
+     },
+     {  
+        "key":"bokn brannvesen",
+        "doc_count":142
+     },
+     {  
+        "key":"eidfjord brannvern",
+        "doc_count":141
+     },
+     {  
+        "key":"tingvoll brannvesen",
+        "doc_count":140
+     },
+     {  
+        "key":"meldal brannvesen",
+        "doc_count":139
+     },
+     {  
+        "key":"gamvik brannvesen",
+        "doc_count":138
+     },
+     {  
+        "key":"surnadal brannvesen",
+        "doc_count":137
+     },
+     {  
+        "key":"os brann og redningstjeneste",
+        "doc_count":134
+     },
+     {  
+        "key":"etnedal brannvesen",
+        "doc_count":133
+     },
+     {  
+        "key":"grane brann og redning",
+        "doc_count":132
+     },
+     {  
+        "key":"bindal brannvesen",
+        "doc_count":131
+     },
+     {  
+        "key":"måsøy brann og redning",
+        "doc_count":131
+     },
+     {  
+        "key":"tydal brann og redningstjeneste",
+        "doc_count":131
+     },
+     {  
+        "key":"selje brann og redning",
+        "doc_count":128
+     },
+     {  
+        "key":"loppa brannvesen",
+        "doc_count":127
+     },
+     {  
+        "key":"agdenes brannvesen",
+        "doc_count":126
+     },
+     {  
+        "key":"eide brannvesen",
+        "doc_count":126
+     },
+     {  
+        "key":"hyllestad brannvern",
+        "doc_count":123
+     },
+     {  
+        "key":"lødingen brann- & redningsvesen",
+        "doc_count":123
+     },
+     {  
+        "key":"sømna brannvesen",
+        "doc_count":123
+     },
+     {  
+        "key":"aure brannvesen",
+        "doc_count":122
+     },
+     {  
+        "key":"vestre slidre brannvesen",
+        "doc_count":120
+     },
+     {  
+        "key":"ulvik brannvern",
+        "doc_count":119
+     },
+     {  
+        "key":"fedje brannvesen",
+        "doc_count":117
+     },
+     {  
+        "key":"aukra brannvesen",
+        "doc_count":116
+     },
+     {  
+        "key":"sande brannvern",
+        "doc_count":114
+     },
+     {  
+        "key":"solund brannvern",
+        "doc_count":113
+     },
+     {  
+        "key":"fosnes brannvesen",
+        "doc_count":111
+     },
+     {  
+        "key":"leka brann- og feiervesen",
+        "doc_count":103
+     },
+     {  
+        "key":"utsira brannvesen",
+        "doc_count":103
+     },
+     {  
+        "key":"bø brannvesen",
+        "doc_count":100
+     },
+     {  
+        "key":"meråker brannvesen",
+        "doc_count":100
+     },
+     {  
+        "key":"ørskog brannvesen",
+        "doc_count":99
+     },
+     {  
+        "key":"aremark brannvesen",
+        "doc_count":98
+     },
+     {  
+        "key":"drangedal brannvesen",
+        "doc_count":98
+     },
+     {  
+        "key":"dønna brannvesen",
+        "doc_count":97
+     },
+     {  
+        "key":"lurøy brannvesen",
+        "doc_count":97
+     },
+     {  
+        "key":"hattfjelldal brannvesen",
+        "doc_count":95
+     },
+     {  
+        "key":"røst brann- og redningsvesen",
+        "doc_count":92
+     },
+     {  
+        "key":"nesna brannvesen",
+        "doc_count":91
+     },
+     {  
+        "key":"rødøy brannvesen",
+        "doc_count":91
+     },
+     {  
+        "key":"lavangen brann- og redningsvesen",
+        "doc_count":90
+     },
+     {  
+        "key":"træna brann- og redningstjeneste",
+        "doc_count":90
+     },
+     {  
+        "key":"vega brann og redningskorps",
+        "doc_count":89
+     },
+     {  
+        "key":"norddal brannvesen",
+        "doc_count":88
+     },
+     {  
+        "key":"flatanger brann og redningsvesen",
+        "doc_count":81
+     },
+     {  
+        "key":"namsskogan brannvesen",
+        "doc_count":81
+     },
+     {  
+        "key":"gjemnes brannvesen",
+        "doc_count":79
+     },
+     {  
+        "key":"sandøy brannvesen",
+        "doc_count":73
+     },
+     {  
+        "key":"brannvesenet i lyngen",
+        "doc_count":71
+     },
+     {  
+        "key":"forsand brannvesen",
+        "doc_count":71
+     },
+     {  
+        "key":"smøla brannvesen",
+        "doc_count":71
+     },
+     {  
+        "key":"stordal brannvesen",
+        "doc_count":70
+     },
+     {  
+        "key":"vanylven brannvern",
+        "doc_count":70
+     },
+     {  
+        "key":"halsa branvesen",
+        "doc_count":67
+     },
+     {  
+        "key":"storfjord brann og redning",
+        "doc_count":67
+     },
+     {  
+        "key":"tranøy brannvesen",
+        "doc_count":66
+     },
+     {  
+        "key":"rindal brannvesen",
+        "doc_count":57
+     },
+     {  
+        "key":"hjelmeland brannvesen",
+        "doc_count":56
+     },
+     {  
+        "key":"midsund brannvesen",
+        "doc_count":55
+     },
+     {  
+        "key":"torsken brannvesen",
+        "doc_count":43
+     },
+     {  
+        "key":"berg brannvesen",
+        "doc_count":20
+     },
+     {  
+        "key":"karlsøy brann og redning",
+        "doc_count":18
+     },
+     {  
+        "key":"fredrikstad brann- og redningskorps, avd. hvaler",
+        "doc_count":3
+     }
+  ]
+}

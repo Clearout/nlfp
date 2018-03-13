@@ -1,7 +1,3 @@
-import Filter from './filter';
-import Query from './query';
-import filters from './filters';
-
 const host = 'http://utvvfpt09.dsbutv.lokal:9200';
 const logType = 'trace';
 const index = 'sambas';
@@ -16,14 +12,7 @@ export default class ElasticClient {
     });
   }
 
-  search(query) {
-    let filter = new Filter(filters.modifier.should, filters.type.term, filters.location.fylke, [
-      'rogaland',
-      'hordaland'
-    ]);
-    query = new Query();
-    query.addFilter(filter);
-    let hits;
+  search(query, that, callback) {
     this.client
       .search({
         index: index,
@@ -34,14 +23,31 @@ export default class ElasticClient {
       })
       .then(
         function(response) {
-          hits = response.hits.hits;
+          callback(that, response.hits.hits);
         },
         function(error) {
           console.trace(error.message);
         }
       );
-    console.log(filter);
-    console.log(JSON.stringify(filter.buildFilter(), null, 2));
-    return hits;
+  }
+
+  count(query, that, callback) {
+    console.log(JSON.stringify(query.buildQuery()));
+    this.client
+      .count({
+        index: index,
+        type: type,
+        body: {
+          query: query.buildQuery()
+        }
+      })
+      .then(
+        function(response) {
+          callback(that, response.count);
+        },
+        function(error) {
+          console.trace(error.message);
+        }
+      );
   }
 }

@@ -16,14 +16,14 @@ export default class Filter {
       this.value.forEach(value => {
         filter.bool[this.modifier].push({
           [this.type]: {
-            [this.field]: value
+            [this.field]: value.toLowerCase()
           }
         });
       });
     } else {
       filter.bool[this.modifier].push({
         [this.type]: {
-          [this.field]: this.value
+          [this.field]: this.value.toLowerCase()
         }
       });
     }

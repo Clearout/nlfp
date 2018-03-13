@@ -6,11 +6,23 @@
           <h4 v-b-toggle="title">{{title}}</h4>
           <hr/>
         </b-card-header>
-        <b-collapse :id="title" :visible="open" :accordion="title" role="tabpanel">
+        <b-collapse 
+          :id="title" 
+          :visible="open" 
+          :accordion="title" 
+          role="tabpanel"
+        >
           <b-card-body class="filter-list">
             <div class="filter-grid">
-              <div v-for="(filter, key) in filters" :key="key">
-                <filter-box :filter="filter"> </filter-box>
+              <div 
+                v-for="(filterDefiniton, key) in filterDefinitons" 
+                :key="key"
+              >
+                <filter-box 
+                  :filterDefiniton="filterDefiniton" 
+                  @filterUpdate="filterUpdate"
+                >
+                </filter-box>
               </div>
             </div>
           </b-card-body>
@@ -25,12 +37,17 @@ import FilterBox from './FilterBox';
 
 export default {
   name: 'FilterSection',
-  props: ['title', 'filters', 'isOpen'],
+  props: ['title', 'filterDefinitons', 'isOpen'],
   components: { FilterBox },
   data() {
     return {
       open: this.isOpen
     };
+  },
+  methods: {
+    filterUpdate(payload) {
+      this.$emit('filterUpdate', payload);
+    }
   }
 };
 </script>

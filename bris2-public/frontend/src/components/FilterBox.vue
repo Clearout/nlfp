@@ -1,15 +1,24 @@
 <template>
   <div id="filter-box-root">
-    <h1>{{filter.msg}}</h1>
+    <multi-select-wrapper
+      :filterDefiniton="filterDefiniton"
+      @filterUpdate="filterUpdate"
+    >
+    </multi-select-wrapper>
   </div>
 </template>
 
 <script>
+import MultiSelectWrapper from './MultiSelectWrapper';
+
 export default {
   name: 'FilterBox',
-  props: ['filter'],
-  data() {
-    return {};
+  props: ['filterDefiniton'],
+  components: { MultiSelectWrapper },
+  methods: {
+    filterUpdate(payload) {
+      this.$emit('filterUpdate', payload);
+    }
   }
 };
 </script>

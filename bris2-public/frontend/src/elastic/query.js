@@ -2,31 +2,56 @@ import Filter from './filter';
 
 export default class Query {
   constructor() {
-    this.query = {
-      bool: {
-        must: []
-      }
-    };
+    this.query = this.resetQuery();
     this.filters = [];
   }
 
-  addFilter(filter) {
-    if (filter.constructor === Filter) {
-      this.filters.push(filter);
-    }
+  resetQuery() {
+    return {
+      constant_score: {
+        filter: {
+          bool: {
+            must: []
+          }
+        }
+      }
+    };
   }
 
   buildQuery() {
+    this.query = this.resetQuery();
     this.filters.forEach(filter => {
       if (filter.constructor === Filter) {
-        /* if (this.query.bool[filter.modifier] == null) {
-          this.query.bool[filter.modifier] = [];
-        } */
-        this.query.bool.must.push(filter.buildFilter());
+        this.query.constant_score.filter.bool.must.push(filter.buildFilter());
       } else {
         console.log(filter, ' is not a Filter and is omitted from this query ', this.query);
       }
     });
     return this.query;
+  }
+
+  updateFilters(filter) {
+    if (filter == null) return;
+    let existingFilterIndex = -1;
+    this.filters.forEach((filterInQuery, index) => {
+      if (filterInQuery.field === filter.field) {
+        existingFilterIndex = index;
+      }
+    });
+    if (existingFilterIndex >= 0) {
+      if (filter.value == null || filter.value.length <= 0) {
+        this.filters.splice(existingFilterIndex, 1);
+      } else {
+        this.filters[existingFilterIndex] = filter;
+      }
+    } else {
+      if (!(filter.value == null || filter.value.length <= 0)) {
+        this.filters.push(filter);
+      }
+    }
+  }
+
+  ready() {
+    return this.filters.length > 0;
   }
 }
