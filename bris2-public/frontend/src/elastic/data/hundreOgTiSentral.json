@@ -1,0 +1,76 @@
+{ 
+  "hundreOgTiSentral": [
+    {
+        "key": "vestviken 110 iks",
+        "doc_count": 49966
+    },
+    {
+        "key": "110-sentralen i oslo",
+        "doc_count": 47472
+    },
+    {
+        "key": "sør-trøndelag 110-sentral",
+        "doc_count": 27912
+    },
+    {
+        "key": "alarmsentral brann øst as",
+        "doc_count": 25198
+    },
+    {
+        "key": "110 hordaland ",
+        "doc_count": 25175
+    },
+    {
+        "key": "110-sentralen agder",
+        "doc_count": 24231
+    },
+    {
+        "key": "nødsentral brann, rogaland brann og redning iks",
+        "doc_count": 19873
+    },
+    {
+        "key": "namdal 110-sentral",
+        "doc_count": 19108
+    },
+    {
+        "key": "110-sentralen i salten ",
+        "doc_count": 18592
+    },
+    {
+        "key": "alarmsentral brann innlandet",
+        "doc_count": 17380
+    },
+    {
+        "key": "110-sentralen på romerike",
+        "doc_count": 14989
+    },
+    {
+        "key": "finnmark 110-sentralen ",
+        "doc_count": 14473
+    },
+    {
+        "key": "møre og romsdal 110-sentral kf",
+        "doc_count": 12779
+    },
+    {
+        "key": "alarmsentralen sogn og fjordane iks",
+        "doc_count": 11272
+    },
+    {
+        "key": "alarmsentralen 110 telemark",
+        "doc_count": 10787
+    },
+    {
+        "key": "110-sentralen i tromsø",
+        "doc_count": 9432
+    },
+    {
+        "key": "asker og bærum 110-sentral",
+        "doc_count": 8991
+    },
+    {
+        "key": "haugaland og sunnhordland 110-sentral",
+        "doc_count": 8306
+    }
+  ]
+}

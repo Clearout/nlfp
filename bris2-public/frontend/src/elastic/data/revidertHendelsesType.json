@@ -1,0 +1,396 @@
+{
+  "revidertHendelsesType": [
+    {
+        "key": "oppdrag løst av 110",
+        "doc_count": 55896
+    },
+    {
+        "key": "aba feil bruk",
+        "doc_count": 30281
+    },
+    {
+        "key": "test",
+        "doc_count": 28295
+    },
+    {
+        "key": "trafikkulykke",
+        "doc_count": 22676
+    },
+    {
+        "key": "avbrutt utrykning",
+        "doc_count": 18477
+    },
+    {
+        "key": "øvelser 110-sentral",
+        "doc_count": 18433
+    },
+    {
+        "key": "aba teknisk/ukjent",
+        "doc_count": 17537
+    },
+    {
+        "key": "helseoppdrag",
+        "doc_count": 12755
+    },
+    {
+        "key": "brann i bygning",
+        "doc_count": 12109
+    },
+    {
+        "key": "bålbrenning varslet",
+        "doc_count": 11254
+    },
+    {
+        "key": "øvelser brannvesen",
+        "doc_count": 10897
+    },
+    {
+        "key": "unødig kontroll av melding",
+        "doc_count": 8803
+    },
+    {
+        "key": "rvr-oppdrag fra bris",
+        "doc_count": 7797
+    },
+    {
+        "key": "rvr uten foregående innsats",
+        "doc_count": 6912
+    },
+    {
+        "key": "andre oppdrag",
+        "doc_count": 6890
+    },
+    {
+        "key": "helseoppdrag annet",
+        "doc_count": 6788
+    },
+    {
+        "key": "brannhindrende tiltak komfyr",
+        "doc_count": 6730
+    },
+    {
+        "key": "brann annet",
+        "doc_count": 5209
+    },
+    {
+        "key": "bistand politi",
+        "doc_count": 4773
+    },
+    {
+        "key": "brannhindrende tiltak annet",
+        "doc_count": 4637
+    },
+    {
+        "key": "aba vaktselskap",
+        "doc_count": 4360
+    },
+    {
+        "key": "unødig innbruddsalarm",
+        "doc_count": 3989
+    },
+    {
+        "key": "oppdrag viderevarslet andre",
+        "doc_count": 3788
+    },
+    {
+        "key": "brann i skorstein",
+        "doc_count": 3694
+    },
+    {
+        "key": "brann i gress- eller innmark",
+        "doc_count": 3686
+    },
+    {
+        "key": "brann i personbil",
+        "doc_count": 3355
+    },
+    {
+        "key": "nødanrop feilring",
+        "doc_count": 3085
+    },
+    {
+        "key": "falsk aba",
+        "doc_count": 2831
+    },
+    {
+        "key": "akutt forurensning",
+        "doc_count": 2681
+    },
+    {
+        "key": "aba feil plassert detektor",
+        "doc_count": 2076
+    },
+    {
+        "key": "unødig alarm vaktselskap",
+        "doc_count": 1930
+    },
+    {
+        "key": "helseoppdrag bære/løfte",
+        "doc_count": 1828
+    },
+    {
+        "key": "ubetydelig forurensning",
+        "doc_count": 1817
+    },
+    {
+        "key": "innbruddsalarm viderevarslet",
+        "doc_count": 1658
+    },
+    {
+        "key": "brann i søppelkasse",
+        "doc_count": 1619
+    },
+    {
+        "key": "brannforebyggende oppdrag",
+        "doc_count": 1613
+    },
+    {
+        "key": "dyreoppdrag",
+        "doc_count": 1529
+    },
+    {
+        "key": "naturhendelse annen",
+        "doc_count": 1463
+    },
+    {
+        "key": "intern hjelpetjeneste",
+        "doc_count": 1459
+    },
+    {
+        "key": "brann i skog- eller utmark",
+        "doc_count": 1395
+    },
+    {
+        "key": "nødanrop 112 viderekoble",
+        "doc_count": 1212
+    },
+    {
+        "key": "teknisk alarm viderevarslet",
+        "doc_count": 1153
+    },
+    {
+        "key": "naturhendelse vind",
+        "doc_count": 1126
+    },
+    {
+        "key": "naturhendelse flom",
+        "doc_count": 1125
+    },
+    {
+        "key": "ulykke/redning annet",
+        "doc_count": 1050
+    },
+    {
+        "key": "heisstopp",
+        "doc_count": 986
+    },
+    {
+        "key": "brann i søppelcontainer",
+        "doc_count": 957
+    },
+    {
+        "key": "person i vann",
+        "doc_count": 863
+    },
+    {
+        "key": "unødig andre alarmer",
+        "doc_count": 821
+    },
+    {
+        "key": "berging av verdier",
+        "doc_count": 708
+    },
+    {
+        "key": "trussel om selvdrap",
+        "doc_count": 656
+    },
+    {
+        "key": "nødanrop 113 viderekoble",
+        "doc_count": 589
+    },
+    {
+        "key": "beredskapsoppdrag",
+        "doc_count": 546
+    },
+    {
+        "key": "brann i lastebil",
+        "doc_count": 546
+    },
+    {
+        "key": "aba trygghetsalarm",
+        "doc_count": 436
+    },
+    {
+        "key": "brann i annet kjøretøy",
+        "doc_count": 412
+    },
+    {
+        "key": "nødanrop 110 viderekoble",
+        "doc_count": 408
+    },
+    {
+        "key": "falsk melding",
+        "doc_count": 406
+    },
+    {
+        "key": "ulykke båt eller skip",
+        "doc_count": 370
+    },
+    {
+        "key": "brann i el installasjon u/bygning",
+        "doc_count": 352
+    },
+    {
+        "key": "uhell farlig stoff uten utslipp",
+        "doc_count": 316
+    },
+    {
+        "key": "brann i fritidsbåt",
+        "doc_count": 306
+    },
+    {
+        "key": "politiårsak uten brannvesenoppdrag",
+        "doc_count": 306
+    },
+    {
+        "key": "oppdrag fra andre alarmer",
+        "doc_count": 299
+    },
+    {
+        "key": "brann i motorredskap og maskiner",
+        "doc_count": 287
+    },
+    {
+        "key": "aba privat bolig",
+        "doc_count": 258
+    },
+    {
+        "key": "togulykke",
+        "doc_count": 224
+    },
+    {
+        "key": "brann gjenoppblussing",
+        "doc_count": 218
+    },
+    {
+        "key": "ikke reell nødmelding",
+        "doc_count": 218
+    },
+    {
+        "key": "fjerning av løst objekt eller is",
+        "doc_count": 214
+    },
+    {
+        "key": "brann i campingvogn/telt",
+        "doc_count": 192
+    },
+    {
+        "key": "brann i gjenvinningsanlegg",
+        "doc_count": 142
+    },
+    {
+        "key": "brann i buss",
+        "doc_count": 131
+    },
+    {
+        "key": "trikke/bybaneulykke",
+        "doc_count": 127
+    },
+    {
+        "key": "trygghetsalarm viderevarslet",
+        "doc_count": 116
+    },
+    {
+        "key": "sokning",
+        "doc_count": 105
+    },
+    {
+        "key": "heisstopp viderevarslet",
+        "doc_count": 99
+    },
+    {
+        "key": "brann i andre båter eller skip",
+        "doc_count": 94
+    },
+    {
+        "key": "brann i tunell",
+        "doc_count": 92
+    },
+    {
+        "key": "skogbrannvakt med fly",
+        "doc_count": 92
+    },
+    {
+        "key": "eksplosjon uten brann",
+        "doc_count": 90
+    },
+    {
+        "key": "naturhendelse annet skred",
+        "doc_count": 86
+    },
+    {
+        "key": "nødanrop konferansekontroll",
+        "doc_count": 78
+    },
+    {
+        "key": "ras konstruksjon",
+        "doc_count": 66
+    },
+    {
+        "key": "brann i fiskefartøy",
+        "doc_count": 59
+    },
+    {
+        "key": "naturhendelse snøskred",
+        "doc_count": 54
+    },
+    {
+        "key": "t-baneulykke",
+        "doc_count": 47
+    },
+    {
+        "key": "brann i bobil",
+        "doc_count": 41
+    },
+    {
+        "key": "ulykke luftfartøy",
+        "doc_count": 38
+    },
+    {
+        "key": "plivo",
+        "doc_count": 37
+    },
+    {
+        "key": "brann i passasjerfartøy",
+        "doc_count": 35
+    },
+    {
+        "key": "flettet",
+        "doc_count": 33
+    },
+    {
+        "key": "brann i kjemikalier/olje",
+        "doc_count": 15
+    },
+    {
+        "key": "brann i tog",
+        "doc_count": 11
+    },
+    {
+        "key": "flomsikring",
+        "doc_count": 11
+    },
+    {
+        "key": "brann i lasteskip",
+        "doc_count": 4
+    },
+    {
+        "key": "brann i luftfartøy",
+        "doc_count": 1
+    },
+    {
+        "key": "brann i trikk/bybane",
+        "doc_count": 1
+    }
+]
+}

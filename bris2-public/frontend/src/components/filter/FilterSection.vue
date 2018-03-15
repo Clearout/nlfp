@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../assets/main';
+@import '../../assets/main';
 .filter-grid {
   display: grid;
   grid-gap: 10px;

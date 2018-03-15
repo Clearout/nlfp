@@ -1,4 +1,4 @@
-import Filter from './filter';
+import Filter from './filter/filter';
 
 export default class Query {
   constructor() {
@@ -7,7 +7,7 @@ export default class Query {
   }
 
   resetQuery() {
-    return {
+    this.query = {
       constant_score: {
         filter: {
           bool: {
@@ -19,7 +19,11 @@ export default class Query {
   }
 
   buildQuery() {
-    this.query = this.resetQuery();
+    if (this.filters == null || this.filters.length === 0) {
+      this.query = { match_all: {} };
+      return this.query;
+    }
+    this.resetQuery();
     this.filters.forEach(filter => {
       if (filter.constructor === Filter) {
         this.query.constant_score.filter.bool.must.push(filter.buildFilter());
@@ -31,7 +35,9 @@ export default class Query {
   }
 
   updateFilters(filter) {
-    if (filter == null) return;
+    if (filter == null) {
+      return;
+    }
     let existingFilterIndex = -1;
     this.filters.forEach((filterInQuery, index) => {
       if (filterInQuery.field === filter.field) {
@@ -49,9 +55,5 @@ export default class Query {
         this.filters.push(filter);
       }
     }
-  }
-
-  ready() {
-    return this.filters.length > 0;
   }
 }

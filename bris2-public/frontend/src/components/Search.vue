@@ -3,7 +3,7 @@
     <div class="top">
       <search-box placeholder="Leter du etter noe?" initialSearch=""></search-box>
       <br>
-      <h3>Antall treff: {{count}}</h3>
+      <h4>Antall treff: {{count}}</h4>
     </div>
     <div class="center"> 
       <div 
@@ -26,8 +26,8 @@
 
 <script>
 import SearchBox from './SearchBox';
-import FilterSection from './FilterSection';
-import FilterDefinitions from '../elastic/filterDefinition';
+import FilterSection from './filter/FilterSection';
+import FilterDefinitions from '../elastic/filter/filterDefinition';
 import Query from '../elastic/query';
 import ElasticClient from '../elastic/elasticClient';
 
@@ -51,12 +51,13 @@ export default {
   methods: {
     updateFilters(filter) {
       this.query.updateFilters(filter);
-      console.log(this.query);
-      if (this.query.ready()) {
-        let that = this;
-        this.client.count(this.query, this, updateCount);
-      }
+      let that = this;
+      this.client.count(this.query, this, updateCount);
     }
+  },
+  mounted() {
+    let that = this;
+    this.client.count(this.query, this, updateCount);
   }
 };
 </script>
@@ -65,7 +66,7 @@ export default {
 .grid-layout {
   grid-template-columns: 1fr 3fr 4fr 3fr 1fr;
 }
-h3 {
+h4 {
   text-align: center;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="filter-box-root">
+  <div id="multi-select-wrapper-root">
     <multi-select 
       :options="options"
       :selected-options="items"

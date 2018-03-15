@@ -1,0 +1,23 @@
+{
+  "time": {    
+    "opprettetDato": "indexed.oppdrag.opprettetDato"
+  },
+  "field": {
+    "fylke": "indexed.oppdrag.adresse.kommune.fylke.fylkenavn.not_analyzed",
+    "kommune": "indexed.oppdrag.adresse.kommune.kommunenavn.not_analyzed",
+    "brannvesen": "indexed.oppdrag.brannvesenNavnForGruppering.not_analyzed",
+    "hundreOgTiSentral": "indexed.oppdrag.sentral.hundreOgTiSentral.navn.not_analyzed",
+    "hendelsesType": "indexed.oppdrag.oppdragsType.not_analyzed",
+    "revidertHendelsesType": "indexed.oppdrag.revidertOppdragstype.navn.verdi.not_analyzed"
+  },
+  "modifier": {
+    "must": "must",
+    "must_not": "must_not",
+    "should": "should"
+  },
+  "type": {
+    "range": "range",
+    "term": "term",
+    "match": "match"
+  }
+}
