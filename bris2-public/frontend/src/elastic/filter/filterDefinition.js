@@ -6,11 +6,11 @@ export default class FilterDefinitions {
     let _ = new DeclaredFilterDefinitions();
     this.timeFilters = {
       title: 'Når?',
-      filters: []
+      filters: [_.registrertBrannvesen]
     };
     this.locationFilters = {
       title: 'Hvor?',
-      filters: [_.fylke, _.kommune]
+      filters: [_.fylke, _.kommune, _.postnr, _.adresse]
     };
     this.eventFilters = {
       title: 'Hva?',
@@ -36,10 +36,10 @@ const lowerCaseWords = new RegExp(/\b(og|i|på)(\b| |$)/);
 const upperCaseWords = new RegExp(/\b(iks|kf|as|aba)(\b| |$)/);
 const split = new RegExp(/( |-|\/)/);
 
-export const type = {
+export const Type = {
   select: 'select',
   input: 'input',
-  date: 'date'
+  time: 'time'
 };
 
 export function mapSortEntry(array, valueToMap, textToMap) {

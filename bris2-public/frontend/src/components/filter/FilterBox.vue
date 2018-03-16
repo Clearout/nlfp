@@ -1,24 +1,56 @@
-<template>
+<template scope="props">
   <div id="filter-box-root">
-    <multi-select-wrapper
-      :filterDefiniton="filterDefiniton"
-      @filterUpdate="filterUpdate"
-    >
-    </multi-select-wrapper>
+    <div v-if="filterType === Type.select">
+      <select-filter
+        :filterDefiniton="filterDefiniton"
+        @filterUpdate="filterUpdate"
+      />
+    </div>
+    <div v-else-if="filterType === Type.time">
+      <time-filter
+        :filterDefiniton="filterDefiniton"
+        @filterUpdate="filterUpdate"
+      />
+    </div>
+    <div v-else-if="filterType === Type.input">
+      <input-filter
+        :filterDefiniton="filterDefiniton"
+        @filterUpdate="filterUpdate"
+      />
+    </div>
+    <div v-else>
+      <p class="text-danger text-center">
+        filterType: {{filterType}}<br>
+        cant be found in<br>
+        Type: {{Type}}<br>
+        can't render filter.
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
-import MultiSelectWrapper from './MultiSelectWrapper';
+import SelectFilter from './SelectFilter';
+import InputFilter from './InputFilter';
+import TimeFilter from './TimeFilter';
+import { Type } from '../../elastic/filter/filterDefinition';
 
 export default {
   name: 'FilterBox',
   props: ['filterDefiniton'],
-  components: { MultiSelectWrapper },
+  components: { SelectFilter, InputFilter, TimeFilter },
   methods: {
     filterUpdate(payload) {
       this.$emit('filterUpdate', payload);
     }
+  },
+  data() {
+    return {
+      filterType: this.filterDefiniton.type
+    };
+  },
+  computed: {
+    Type: () => Type
   }
 };
 </script>

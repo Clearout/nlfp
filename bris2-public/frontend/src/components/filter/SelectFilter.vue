@@ -1,5 +1,5 @@
 <template>
-  <div id="multi-select-wrapper-root">
+  <div id="select-filter-root">
     <multi-select 
       :options="options"
       :selected-options="items"
@@ -14,7 +14,7 @@ import _ from 'lodash';
 import { MultiSelect } from 'vue-search-select';
 
 export default {
-  name: 'MultiSelectWrapper',
+  name: 'SelectFilter',
   props: ['filterDefiniton'],
   components: { MultiSelect },
   data() {

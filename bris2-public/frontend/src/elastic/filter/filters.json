@@ -8,7 +8,14 @@
     "brannvesen": "indexed.oppdrag.brannvesenNavnForGruppering.not_analyzed",
     "hundreOgTiSentral": "indexed.oppdrag.sentral.hundreOgTiSentral.navn.not_analyzed",
     "hendelsesType": "indexed.oppdrag.oppdragsType.not_analyzed",
-    "revidertHendelsesType": "indexed.oppdrag.revidertOppdragstype.navn.verdi.not_analyzed"
+    "revidertHendelsesType": "indexed.oppdrag.revidertOppdragstype.navn.verdi.not_analyzed",
+    "adresse": [
+      "indexed.oppdrag.adresse.adresseLinje.not_analyzed",
+      "indexed.oppdrag.adresse.adresseLinje2.not_analyzed",
+      "indexed.oppdrag.adresse.adresseLinjer.not_analyzed"
+    ],
+    "postnr": "indexed.oppdrag.adresse.poststed.postnr",
+    "registrertBrannvesen": "indexed.oppdrag.registrertBrannvesen"
   },
   "modifier": {
     "must": "must",
