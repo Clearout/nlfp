@@ -32,8 +32,9 @@ import Query from '../elastic/query';
 import ElasticClient from '../elastic/elasticClient';
 
 let filterDefinitions = new FilterDefinitions();
-let updateCount = function(that, count) {
-  that.count = count;
+let updateCount = function(that, response) {
+  console.log(response);
+  that.count = response ? response.count : 0;
 };
 
 export default {

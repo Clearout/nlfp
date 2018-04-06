@@ -1,5 +1,11 @@
 import Filter from './filter';
-import { FilterDefinition, mapSortFormatEntry, mapSortEntry, Type } from './filterDefinition';
+import {
+  FilterDefinition,
+  mapSortFormatEntry,
+  mapSortEntry,
+  mapSortFormatAndEnrichNestedQuestionEntry,
+  Type
+} from './filterDefinition';
 
 import filters from './filters';
 import fylkeFile from '../data/fylker';
@@ -7,6 +13,7 @@ import kommuneFile from '../data/kommuner';
 import brannvesenFile from '../data/brannvesen';
 import hundreOgTiSentralFile from '../data/hundreOgTiSentral';
 import revidertHendelsesTypeFile from '../data/revidertHendelsesType';
+import bakgrunnOgOmfang from '../data/bakgrunnOgOmfang';
 
 export default class DeclaredFilterDefinitions {
   constructor() {
@@ -57,6 +64,12 @@ export default class DeclaredFilterDefinitions {
       '',
       Type.time,
       new Filter(filters.modifier.should, filters.type.term, filters.field.registrertBrannvesen)
+    );
+    this.bakgrunnOgOmfang = new FilterDefinition(
+      'Bakgrunn og omfang',
+      mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfang.groups),
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
     );
   }
 }

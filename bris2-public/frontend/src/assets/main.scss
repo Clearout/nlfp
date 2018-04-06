@@ -65,11 +65,12 @@ $gray-100: $gray-100;
     border-color: $bris-color !important;
     border-radius: 0 !important;
   }
+  .label {
+    font-weight: 600 !important;
+  }
   .label > .delete.icon:after {
-    content: 'x';
+    content: '\D7';
     color: #000;
-    font-size: 17px;
-    font-style: normal;
   }
   .fluid.dropdown > .dropdown.icon {
     color: $bris-color;
@@ -78,4 +79,67 @@ $gray-100: $gray-100;
     color: $gray-600 !important;
     font-weight: 400;
   }
+}
+
+.inner-container {  
+  .picker-button {
+    font-size: 28px !important;
+  }
+}
+
+.multiselect {
+  border-radius: 0;
+  border: 1px solid $bris-color;
+}
+
+.multiselect__option--highlight {
+  background: $bris-color !important;
+}
+
+.multiselect__option::after {  
+  background: $bris-color !important;
+}
+
+.multiselect__option--group {
+  background: $gray-300 !important;
+}
+
+.multiselect__option--group .multiselect__option--highlight ::after { 
+  background: $gray-300 !important;
+}
+
+.multiselect__content-wrapper {
+  width: 500px !important;
+}
+
+.multiselect__tag {
+  border-radius: 0 !important;  
+  background: $gray-300 !important; 
+}
+
+.multiselect__tag-icon {  
+  border-radius: 0 !important;
+}
+.multiselect__tag-icon::after {  
+  color: $gray-600 !important;
+  font-weight: 600;
+  font-size: 1em;
+}
+.multiselect__tag-icon:focus, .multiselect__tag-icon:hover {
+  background: $bris-color !important;
+}
+
+.multiselect__tags {
+  font-size: 1em !important;
+  font-weight: 600 !important;
+}
+
+.multiselect__tags > span > span.multiselect__single {
+  color: $gray-500;
+  font-weight: 400 !important;
+}
+
+.multiselect__tags > input::placeholder {
+  color: $gray-500;
+  font-weight: 400 !important;
 }

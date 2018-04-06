@@ -1,4 +1,4 @@
-const host = 'http://utvvfpt09.dsbutv.lokal:9200';
+const host = 'http://localhost:3000';
 const logType = 'trace';
 const index = 'sambas';
 const type = 'OppdragRapport';
@@ -32,7 +32,6 @@ export default class ElasticClient {
   }
 
   count(query, that, callback) {
-    console.log(JSON.stringify(query.buildQuery()));
     this.client
       .count({
         index: index,
@@ -43,7 +42,7 @@ export default class ElasticClient {
       })
       .then(
         function(response) {
-          callback(that, response.count);
+          callback(that, response);
         },
         function(error) {
           console.trace(error.message);

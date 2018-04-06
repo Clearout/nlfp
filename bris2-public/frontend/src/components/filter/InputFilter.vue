@@ -21,7 +21,6 @@ export default {
   },
   methods: {
     onChange() {
-      console.log('CHANGE : ', this.filterDefiniton.type);
       this.filterDefiniton.filter.value = this.value;
       if (this.timer) {
         clearTimeout(this.timer);

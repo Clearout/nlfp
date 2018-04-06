@@ -15,7 +15,11 @@
       "indexed.oppdrag.adresse.adresseLinjer.not_analyzed"
     ],
     "postnr": "indexed.oppdrag.adresse.poststed.postnr",
-    "registrertBrannvesen": "indexed.oppdrag.registrertBrannvesen"
+    "registrertBrannvesen": "indexed.oppdrag.registrertBrannvesen",
+    "bakgrunnOgOmfang": [
+      "indexed.sporsmal.225.tekst.not_analyzed",
+      "indexed.sporsmal.229.tekst.not_analyzed"
+    ]
   },
   "modifier": {
     "must": "must",

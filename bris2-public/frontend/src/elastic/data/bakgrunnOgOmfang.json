@@ -1,0 +1,67 @@
+{
+  "groups" : [
+    {
+      "title": "Hvordan ble brannen oppdaget",
+      "field": "indexed.sporsmal.225.tekst.not_analyzed",
+      "answers": [
+        {
+          "name": "ukjent"
+        },
+        {
+          "name": "røykvarsler"
+        },
+        {
+          "name": "noen så eller luktet røyk eller flammer"
+        },
+        {
+          "name": "automatisk slokkeanlegg"
+        },
+        {
+          "name": "automatisk brannalarm"
+        },
+        {
+          "name": "annet"
+        }
+      ]
+    },
+    {
+      "title": "Hva startet brannen i",
+      "field": "indexed.sporsmal.225.tekst.not_analyzed",
+      "answers": [
+        {
+          "name": "vegg, gulv eller tak"
+        },
+        {
+          "name": "vegetasjon"
+        },
+        {
+          "name": "ukjent"
+        },
+        {
+          "name": "skorstein eller ildsted"
+        },
+        {
+          "name": "møbler eller tekstiler"
+        },
+        {
+          "name": "mat på eller utenfor komfyr"
+        },
+        {
+          "name": "kjøretøy"
+        },
+        {
+          "name": "elektrisk utstyr"
+        },
+        {
+          "name": "avfallsbeholder, container eller resirkuleringsstasjon"
+        },
+        {
+          "name": "annet utstyr"
+        },
+        {
+          "name": "annet startobjekt"
+        }
+      ]
+    }
+  ]
+}

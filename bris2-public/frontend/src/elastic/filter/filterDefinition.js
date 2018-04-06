@@ -14,7 +14,7 @@ export default class FilterDefinitions {
     };
     this.eventFilters = {
       title: 'Hva?',
-      filters: [_.revidertHendelsesType]
+      filters: [_.revidertHendelsesType, _.bakgrunnOgOmfang]
     };
     this.resourceFilters = {
       title: 'Ressurser',
@@ -39,7 +39,8 @@ const split = new RegExp(/( |-|\/)/);
 export const Type = {
   select: 'select',
   input: 'input',
-  time: 'time'
+  time: 'time',
+  category: 'category'
 };
 
 export function mapSortEntry(array, valueToMap, textToMap) {
@@ -78,4 +79,21 @@ export function mapSortFormatEntry(array, valueToMap, textToMap) {
     .sort(function(a, b) {
       return a.text.localeCompare(b.text);
     });
+}
+
+export function mapSortFormatAndEnrichNestedQuestionEntry(array) {
+  return array.map(
+    group =>
+      (group = {
+        title: group.title,
+        field: group.field,
+        answers: group.answers.map(
+          answer =>
+            (answer = {
+              name: answer.name.charAt(0).toUpperCase() + answer.name.substr(1),
+              field: group.field
+            })
+        )
+      })
+  );
 }

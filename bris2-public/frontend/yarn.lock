@@ -7701,10 +7701,6 @@ void-elements@^2.0.0:
   version "2.0.1"
   resolved "http://vnexus.utv.lokal/content/groups/npm-all/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
 
-vue-datetime-picker@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/vue-datetime-picker/-/vue-datetime-picker-0.2.1.tgz#7b724dde3b72d531645a27d6597589d6d882ad3b"
-
 vue-eslint-parser@^2.0.1:
   version "2.0.2"
   resolved "http://vnexus.utv.lokal/content/groups/npm-all/vue-eslint-parser/-/vue-eslint-parser-2.0.2.tgz#8d603545e9d7c134699075bd1772af1ffd86b744"
@@ -7742,6 +7738,10 @@ vue-loader@^13.3.0:
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.6.0"
 
+vue-multiselect@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-multiselect/-/vue-multiselect-2.1.0.tgz#9e8ee7087658f029d06778cdb8da0b34ee3f1e28"
+
 vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
@@ -7771,6 +7771,10 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.5.2:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
+
+vuejs-datepicker@^0.9.29:
+  version "0.9.29"
+  resolved "https://registry.yarnpkg.com/vuejs-datepicker/-/vuejs-datepicker-0.9.29.tgz#b17e504a9ae699f590b2fbe07237d5309012083b"
 
 watchpack@^1.4.0:
   version "1.4.0"

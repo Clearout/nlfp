@@ -6,29 +6,6 @@ export default class Filter {
     this.value = value; // number | string | object | array
   }
 
-  abuildFilter() {
-    this.filter = {
-      bool: {
-        [this.modifier]: []
-      }
-    };
-    if (this.value.constructor === Array) {
-      this.value.forEach(value => {
-        this.filter.bool[this.modifier].push({
-          [this.type]: {
-            [this.field]: value.toLowerCase()
-          }
-        });
-      });
-    } else {
-      this.filter.bool[this.modifier].push({
-        [this.type]: {
-          [this.field]: this.value.toLowerCase()
-        }
-      });
-    }
-    return this.filter;
-  }
   buildFilter() {
     this.filter = {
       bool: {
