@@ -29,7 +29,7 @@ import FilterDefinitions from '../../elastic/filter/filterDefinition';
 
 export default {
   name: 'CategoryFilter',
-  props: ['filterDefiniton'],
+  props: ['filterDefiniton', 'resetFilter'],
   components: { Multiselect },
   data() {
     return {
@@ -40,20 +40,14 @@ export default {
     };
   },
   methods: {
-    /*onSelect(items, lastSelectItem) {
-      this.items = items;
-      this.lastSelectItem = lastSelectItem;
-      this.filterDefiniton.filter.value = items.map(item => (item = item.value));
-      this.$emit('filterUpdate', this.filterDefiniton.filter);
-    },
-    // deselect option
     reset() {
-      this.items = []; // reset
-    },
-    // select option from parent component
-    selectOption() {
-      this.items = _.unionWith(this.items, [this.options[0]], _.isEqual);
-    }*/
+      this.value = [];
+    }
+  },
+  watch: {
+    resetFilter: function() {
+      this.reset();
+    }
   }
 };
 </script>

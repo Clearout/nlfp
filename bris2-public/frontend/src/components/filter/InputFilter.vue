@@ -13,7 +13,7 @@
 <script>
 export default {
   name: 'SelectFilter',
-  props: ['filterDefiniton'],
+  props: ['filterDefiniton', 'resetFilter'],
   data() {
     return {
       value: ''
@@ -31,6 +31,11 @@ export default {
     },
     emitUpdate() {
       this.$emit('filterUpdate', this.filterDefiniton.filter);
+    }
+  },
+  watch: {
+    resetFilter: function() {
+      this.value = '';
     }
   }
 };

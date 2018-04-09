@@ -29,7 +29,7 @@ import Datepicker from 'vuejs-datepicker';
 
 export default {
   name: 'TimeFilter',
-  props: ['filterDefiniton'],
+  props: ['filterDefiniton', 'resetFilter'],
   components: {
     Datepicker
   },
@@ -51,6 +51,14 @@ export default {
     },
     emitUpdate() {
       this.$emit('filterUpdate', this.filterDefiniton.filter);
+    },
+    reset() {
+      this.value = '';
+    }
+  },
+  watch: {
+    resetFilter: function() {
+      this.reset();
     }
   }
 };

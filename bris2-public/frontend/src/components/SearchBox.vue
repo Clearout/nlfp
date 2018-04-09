@@ -1,17 +1,23 @@
 <template>
   <div id="searchbox-root">
-      <b-col cols="4" offset="4" style="display:flex" class="search-container">
-          <b-form-input 
-            v-model="search" 
-            type="search" 
-            size="lg" 
-            v-bind:placeholder="placeholder"
-            class="searchbox searcharea">
-          </b-form-input>
-          <b-btn class="searchbutton searcharea" @click="ping">
-            <i class="fa fa-search search-icon"></i>
-          </b-btn>
-      </b-col>
+    <b-col cols="4" offset="4" class="search-container">
+      <b-form-input 
+        v-model="search" 
+        type="search" 
+        size="lg" 
+        :placeholder="placeholder"
+        class="searchbox searcharea">
+      </b-form-input>
+      <b-btn class="searchbutton searcharea" @click="ping">
+        <i class="fa fa-search search-icon"></i>
+      </b-btn>
+    </b-col>
+    <b-col cols="2">
+      <b-btn @click="resetFilter" class="reset btn-light">
+        <i class="fa fa-minus-circle"></i>
+        Nullstill søk og filter
+      </b-btn>
+    </b-col>
   </div>
 </template>
 
@@ -27,7 +33,11 @@ export default {
     };
   },
   methods: {
-    ping() {}
+    ping() {},
+    resetFilter() {
+      this.search = '';
+      this.$emit('resetFilter', true);
+    }
   }
 };
 </script>
@@ -36,13 +46,25 @@ export default {
 @import '../assets/main';
 @import '../assets/custom-bs';
 
+.reset {
+  background-color: $white;
+  border: 0;
+  box-shadow: 0;
+}
+
 #searchbox-root {
   display: flex;
 }
+
+.search-container {
+  display: flex;
+}
+
 .search-container:focus-within > .searcharea {
   box-shadow: 0 0 0 0.1rem $bris-color;
   border-color: $bris-color;
 }
+
 .searcharea {
   box-shadow: 0;
   border: 2px solid $gray-700;
@@ -52,13 +74,15 @@ export default {
 .searchbox {
   height: 100px;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border-right: 0;
 }
+
 .searchbutton {
   width: 100px;
   background-color: $white;
 }
+
 .search-icon {
   color: $gray-700;
   font-weight: 200;

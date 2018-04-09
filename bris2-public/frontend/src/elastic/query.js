@@ -2,8 +2,8 @@ import Filter from './filter/filter';
 
 export default class Query {
   constructor() {
-    this.query = this.resetQuery();
-    this.filters = [];
+    this.resetQuery();
+    this.resetFilters();
   }
 
   resetQuery() {
@@ -16,6 +16,10 @@ export default class Query {
         }
       }
     };
+  }
+
+  resetFilters() {
+    this.filters = [];
   }
 
   buildQuery() {

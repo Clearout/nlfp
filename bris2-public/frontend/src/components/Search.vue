@@ -1,7 +1,11 @@
 <template>  
   <div class="grid-layout">
     <div class="top">
-      <search-box placeholder="Leter du etter noe?" initialSearch=""></search-box>
+      <search-box
+        @resetFilter="resetFilters()"
+        placeholder="Finn tallene du leter etter ved å søke her" 
+        initialSearch="">
+      </search-box>
       <br>
       <h4>Antall treff: {{count}}</h4>
     </div>
@@ -12,7 +16,8 @@
       >        
         <filter-section 
           :title="filterDefinition.title"
-          :filterDefinitons="filterDefinition.filters" 
+          :filterDefinitons="filterDefinition.filters"
+          :resetFilter="reset"
           :isOpen="true" 
           @filterUpdate="updateFilters">
         </filter-section>
@@ -46,12 +51,19 @@ export default {
       filterDefinitons: filterDefinitions,
       query: new Query(),
       client: new ElasticClient(),
-      count: 0
+      count: 0,
+      reset: 0
     };
   },
   methods: {
     updateFilters(filter) {
       this.query.updateFilters(filter);
+      let that = this;
+      this.client.count(this.query, this, updateCount);
+    },
+    resetFilters() {
+      this.reset++;
+      this.query.resetFilters();
       let that = this;
       this.client.count(this.query, this, updateCount);
     }

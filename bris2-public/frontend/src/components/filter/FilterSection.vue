@@ -19,7 +19,8 @@
                 :key="key"
               >
                 <filter-box 
-                  :filterDefiniton="filterDefiniton" 
+                  :filterDefiniton="filterDefiniton"
+                  :resetFilter="resetFilter"
                   @filterUpdate="filterUpdate"
                 >
                 </filter-box>
@@ -37,7 +38,7 @@ import FilterBox from './FilterBox';
 
 export default {
   name: 'FilterSection',
-  props: ['title', 'filterDefinitons', 'isOpen'],
+  props: ['title', 'filterDefinitons', 'isOpen', 'resetFilter'],
   components: { FilterBox },
   data() {
     return {

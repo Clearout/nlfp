@@ -15,7 +15,7 @@ import { MultiSelect } from 'vue-search-select';
 
 export default {
   name: 'SelectFilter',
-  props: ['filterDefiniton'],
+  props: ['filterDefiniton', 'resetFilter'],
   components: { MultiSelect },
   data() {
     return {
@@ -39,6 +39,11 @@ export default {
     // select option from parent component
     selectOption() {
       this.items = _.unionWith(this.items, [this.options[0]], _.isEqual);
+    }
+  },
+  watch: {
+    resetFilter: function() {
+      this.reset();
     }
   }
 };

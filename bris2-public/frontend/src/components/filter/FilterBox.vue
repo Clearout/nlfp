@@ -1,16 +1,16 @@
 <template scope="props">
   <div id="filter-box-root">
     <div v-if="filterType === Type.select">
-      <select-filter :filterDefiniton="filterDefiniton" @filterUpdate="filterUpdate" />
+      <select-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.time">
-      <time-filter :filterDefiniton="filterDefiniton" @filterUpdate="filterUpdate" />
+      <time-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.input">
-      <input-filter :filterDefiniton="filterDefiniton" @filterUpdate="filterUpdate" />
+      <input-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.category">
-      <category-filter :filterDefiniton="filterDefiniton" @filterUpdate="filterUpdate" />
+      <category-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else>
       <p class="text-danger text-center">
@@ -29,7 +29,7 @@ import { Type } from '../../elastic/filter/filterDefinition';
 
 export default {
   name: 'FilterBox',
-  props: ['filterDefiniton'],
+  props: ['filterDefiniton', 'resetFilter'],
   components: { SelectFilter, InputFilter, TimeFilter, CategoryFilter },
   methods: {
     filterUpdate(payload) {
