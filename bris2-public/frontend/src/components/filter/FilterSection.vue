@@ -85,9 +85,8 @@ h4 {
 }
 
 hr {
-  margin: 0;
-  border: 0;
-  background-color: $bris-color;
+  border: none;
+  border-top: 2px solid $bris-color;
   height: 2px;
 }
 </style>

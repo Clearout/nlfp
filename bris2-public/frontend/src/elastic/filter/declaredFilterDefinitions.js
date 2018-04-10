@@ -4,6 +4,7 @@ import {
   mapSortFormatEntry,
   mapSortEntry,
   mapSortFormatAndEnrichNestedQuestionEntry,
+  categoryFilters,
   Type
 } from './filterDefinition';
 
@@ -30,16 +31,34 @@ export default class DeclaredFilterDefinitions {
       new Filter(filters.modifier.should, filters.type.term, filters.field.kommune, '')
     );
     this.brannvesen = new FilterDefinition(
-      'Brannvesen',
+      'Brann- og Redningsvesen',
       mapSortFormatEntry(brannvesenFile.brannvesen, 'key', 'key'),
       Type.select,
       new Filter(filters.modifier.should, filters.type.term, filters.field.brannvesen)
     );
     this.hundreOgTiSentral = new FilterDefinition(
-      '110 Sentral',
+      '110- Sentral',
       mapSortFormatEntry(hundreOgTiSentralFile.hundreOgTiSentral, 'key', 'key'),
       Type.select,
       new Filter(filters.modifier.should, filters.type.term, filters.field.hundreOgTiSentral)
+    );
+    this.stasjonsnavnDummy = new FilterDefinition(
+      'Stasjonsnavn',
+      null,
+      Type.select,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.hundreOgTiSentral)
+    );
+    this.bilerDummy = new FilterDefinition(
+      'Biler',
+      null,
+      Type.select,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.hundreOgTiSentral)
+    );
+    this.hendelsesType = new FilterDefinition(
+      'Opprinnelig Hendelsestype',
+      mapSortFormatEntry(revidertHendelsesTypeFile.revidertHendelsesType, 'key', 'key'),
+      Type.select,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.hendelsesType)
     );
     this.revidertHendelsesType = new FilterDefinition(
       'Revidert Hendelsestype',
@@ -60,14 +79,98 @@ export default class DeclaredFilterDefinitions {
       new Filter(filters.modifier.should, filters.type.term, filters.field.postnr)
     );
     this.registrertBrannvesen = new FilterDefinition(
-      'Tidsperiode',
+      'Tid på Døgnet',
+      '',
+      Type.time,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.registrertBrannvesen)
+    );
+    this.weekdayDummy = new FilterDefinition(
+      'Ukedag',
+      '',
+      Type.time,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.registrertBrannvesen)
+    );
+    this.monthDummy = new FilterDefinition(
+      'Måned',
+      '',
+      Type.time,
+      new Filter(filters.modifier.should, filters.type.term, filters.field.registrertBrannvesen)
+    );
+    this.yearDummy = new FilterDefinition(
+      'År',
       '',
       Type.time,
       new Filter(filters.modifier.should, filters.type.term, filters.field.registrertBrannvesen)
     );
     this.bakgrunnOgOmfang = new FilterDefinition(
-      'Bakgrunn og omfang',
+      'Bakgrunn og Omfang',
       mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfang.groups),
+      Type.category,
+      categoryFilters(filters.modifier.should, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.stedOgBygningDummy = new FilterDefinition(
+      'Sted og Bygning',
+      mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfang.groups),
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.innsatsOgOppgaverDummy = new FilterDefinition(
+      'Innsats og Oppgaver',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.spredningDummy = new FilterDefinition(
+      'Spredning',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.ressurserDummy = new FilterDefinition(
+      'Ressurser',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.farligStoffOgForurensningDummy = new FilterDefinition(
+      'Farlig Stoff og Forurensning',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.personDummy = new FilterDefinition(
+      'Person',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.personskaderOgOmkomneDummy = new FilterDefinition(
+      'Personskader og Omkomne',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.reddedeDummy = new FilterDefinition(
+      'Reddede',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.andreSkaderDummy = new FilterDefinition(
+      'Andre Skader',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.vurderingAvHendelseDummy = new FilterDefinition(
+      'Vurdering av Hendelse og Håndtering',
+      null,
+      Type.category,
+      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+    );
+    this.politiDummy = new FilterDefinition(
+      'Politiårsak',
+      null,
       Type.category,
       new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
     );

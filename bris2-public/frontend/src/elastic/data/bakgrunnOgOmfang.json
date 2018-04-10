@@ -26,7 +26,7 @@
     },
     {
       "title": "Hva startet brannen i",
-      "field": "indexed.sporsmal.225.tekst.not_analyzed",
+      "field": "indexed.sporsmal.229.tekst.not_analyzed",
       "answers": [
         {
           "name": "vegg, gulv eller tak"

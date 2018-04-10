@@ -1,15 +1,18 @@
 <template scope="props">
   <div id="filter-box-root">
     <div v-if="filterType === Type.select">
+      <h6>&nbsp;&nbsp;&nbsp;{{title}}</h6>
       <select-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.time">
       <time-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.input">
+      <h6>&nbsp;&nbsp;&nbsp;{{title}}</h6>
       <input-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else-if="filterType === Type.category">
+      <h6>&nbsp;&nbsp;&nbsp;{{title}}</h6>
       <category-filter :filterDefiniton="filterDefiniton" :resetFilter="resetFilter" @filterUpdate="filterUpdate" />
     </div>
     <div v-else>
@@ -17,6 +20,7 @@
         filterType: {{filterType}}<br> cant be found in<br> Type: {{Type}}<br> can't render filter.
       </p>
     </div>
+    <br>
   </div>
 </template>
 
@@ -38,7 +42,8 @@ export default {
   },
   data() {
     return {
-      filterType: this.filterDefiniton.type
+      filterType: this.filterDefiniton.type,
+      title: this.filterDefiniton.title
     };
   },
   computed: {

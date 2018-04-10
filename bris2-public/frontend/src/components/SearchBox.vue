@@ -6,7 +6,8 @@
         type="search" 
         size="lg" 
         :placeholder="placeholder"
-        class="searchbox searcharea">
+        class="searchbox searcharea"
+      >
       </b-form-input>
       <b-btn class="searchbutton searcharea" @click="ping">
         <i class="fa fa-search search-icon"></i>

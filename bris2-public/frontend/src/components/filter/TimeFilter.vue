@@ -9,12 +9,20 @@
           <div class="inner-container">
             <h6>Fra</h6>
             <b-row>
-              <datepicker :calendar-button="true" calendar-button-icon="fa fa-calendar pull-right picker-button">
+              <datepicker
+                v-model="from"
+                :calendar-button="true" 
+                calendar-button-icon="fa fa-calendar pull-right picker-button"
+              >
               </datepicker>
             </b-row>
             <h6>Til</h6>
             <b-row>
-              <datepicker :calendar-button="true" calendar-button-icon="fa fa-calendar pull-right picker-button">
+              <datepicker
+                v-model="to"
+                :calendar-button="true"
+                calendar-button-icon="fa fa-calendar pull-right picker-button"
+              >
               </datepicker>
             </b-row>
           </div>
@@ -35,7 +43,9 @@ export default {
   },
   data() {
     return {
-      value: ''
+      value: '',
+      from: '',
+      to: ''
     };
   },
   methods: {
@@ -54,6 +64,8 @@ export default {
     },
     reset() {
       this.value = '';
+      this.from = '';
+      this.to = '';
     }
   },
   watch: {
@@ -73,11 +85,14 @@ export default {
 }
 
 .timefilter-header {
+  cursor: pointer;
   border: 1px solid $bris-color;
   border-radius: 0;
   background-color: $white;
   margin: -1px -1px -1px -1px;
   padding: 9px 13px;
+  font-weight: 500;
+  font-size: 1rem;
   h6 {
     font-weight: 400;
     font-size: 16px;

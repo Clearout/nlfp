@@ -2,7 +2,7 @@
   <div id="input-filter-root">
     <b-form-input
     v-model="value" 
-    :placeholder="filterDefiniton.title"
+    x:placeholder="filterDefiniton.title"
     :type="filterDefiniton.options"
     @input="onChange"
     class="input-filter"

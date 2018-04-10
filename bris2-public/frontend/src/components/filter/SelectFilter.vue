@@ -3,7 +3,7 @@
     <multi-select 
       :options="options"
       :selected-options="items"
-      :placeholder="filterDefiniton.title"
+      x:placeholder="filterDefiniton.title"
       @select="onSelect">
     </multi-select>
   </div>
@@ -30,7 +30,7 @@ export default {
       this.items = items;
       this.lastSelectItem = lastSelectItem;
       this.filterDefiniton.filter.value = items.map(item => (item = item.value));
-      this.$emit('filterUpdate', this.filterDefiniton.filter);
+      this.emitUpdate();
     },
     // deselect option
     reset() {
@@ -39,6 +39,9 @@ export default {
     // select option from parent component
     selectOption() {
       this.items = _.unionWith(this.items, [this.options[0]], _.isEqual);
+    },
+    emitUpdate() {
+      this.$emit('filterUpdate', this.filterDefiniton.filter);
     }
   },
   watch: {

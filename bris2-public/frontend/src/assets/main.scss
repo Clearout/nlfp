@@ -88,8 +88,9 @@ $gray-100: $gray-100;
 }
 
 .multiselect {
-  border-radius: 0;
-  border: 1px solid $bris-color;
+  border-radius: 0 !important;
+  border: 1px solid $bris-color !important;
+  cursor: text;
 }
 
 .multiselect__option--highlight {
@@ -110,6 +111,11 @@ $gray-100: $gray-100;
 
 .multiselect__content-wrapper {
   width: 500px !important;
+  min-height: 300px !important;
+  border: 1px solid $bris-color !important;
+  border-radius: 0 !important;
+  left: -1px !important;
+  box-shadow: 0 !important;
 }
 
 .multiselect__tag {
@@ -132,6 +138,10 @@ $gray-100: $gray-100;
 .multiselect__tags {
   font-size: 1em !important;
   font-weight: 600 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
+  border: 0 !important;
+  background: 0 !important;
 }
 
 .multiselect__tags > span > span.multiselect__single {

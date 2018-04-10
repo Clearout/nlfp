@@ -1,24 +1,27 @@
 <template>
   <div id="select-filter-root">
     <multiselect 
-      v-model="value" 
-      :options="options" 
+      v-model="values" 
+      :options="options"
+      @input="onChange" 
       :multiple="true" 
       group-values="answers" 
       group-label="title" 
       :group-select="true" 
-      :placeholder="title"
+      placeholder=""
       track-by="name" 
       label="name"
       selectLabel="Trykk for å velge"
       selectedLabel="Valgt"
       deselectLabel="Trykk for å fjerne"
+      selectGroupLabel="Trykk for å velge alle svar"
+      deselectGroupLabel="Trykk for å fjerne alle svar"
       :maxHeight="maxHeight"
       openDirection="below"
       :clearOnSelect="true"
       :hideSelected="true"
     >
-      <span slot="noResult">Ingen elementer funnet for ditt søk.</span>
+      <span slot="noResult">Ingen resultater for ditt søk.</span>
     </multiselect>
   </div>
 </template>
@@ -36,12 +39,30 @@ export default {
       maxHeight: 500,
       title: this.filterDefiniton.title,
       options: this.filterDefiniton.options,
-      value: []
+      values: []
     };
   },
   methods: {
     reset() {
-      this.value = [];
+      this.values = [];
+    },
+    onChange() {
+      this.filterDefiniton.filter.forEach(filter => (filter.value = []));
+      console.log(this.filterDefiniton.filter);
+      this.values.forEach(value => {
+        console.log('current value: ', value);
+        this.filterDefiniton.filter.filter(f => f.field === value.field).forEach(f => {
+          console.log(f.field);
+          console.log(value.field);
+          f.value.push(value.name);
+        });
+      });
+      this.emitUpdate();
+    },
+    emitUpdate() {
+      this.filterDefiniton.filter
+        .filter(f => f.value != null && f.value != '')
+        .forEach(filter => this.$emit('filterUpdate', filter));
     }
   },
   watch: {

@@ -1,4 +1,5 @@
 import DeclaredFilterDefinitions from './declaredFilterDefinitions';
+import Filter from './filter';
 /* eslint-disable */
 
 export default class FilterDefinitions {
@@ -6,7 +7,7 @@ export default class FilterDefinitions {
     let _ = new DeclaredFilterDefinitions();
     this.timeFilters = {
       title: 'Når?',
-      filters: [_.registrertBrannvesen]
+      filters: [_.registrertBrannvesen, _.weekdayDummy, _.monthDummy, _.yearDummy]
     };
     this.locationFilters = {
       title: 'Hvor?',
@@ -14,11 +15,26 @@ export default class FilterDefinitions {
     };
     this.eventFilters = {
       title: 'Hva?',
-      filters: [_.revidertHendelsesType, _.bakgrunnOgOmfang]
+      filters: [
+        _.hendelsesType,
+        _.revidertHendelsesType,
+        _.innsatsOgOppgaverDummy,
+        _.spredningDummy,
+        _.ressurserDummy,
+        _.farligStoffOgForurensningDummy,
+        _.stedOgBygningDummy,
+        _.bakgrunnOgOmfang,
+        _.personDummy,
+        _.personskaderOgOmkomneDummy,
+        _.reddedeDummy,
+        _.andreSkaderDummy,
+        _.innsatsOgOppgaverDummy,
+        _.politiDummy
+      ]
     };
     this.resourceFilters = {
       title: 'Ressurser',
-      filters: [_.brannvesen, _.hundreOgTiSentral]
+      filters: [_.brannvesen, _.stasjonsnavnDummy, _.bilerDummy, _.hundreOgTiSentral]
     };
   }
 }
@@ -96,4 +112,11 @@ export function mapSortFormatAndEnrichNestedQuestionEntry(array) {
         )
       })
   );
+}
+
+export function categoryFilters(modifier, type, fields) {
+  let filters = [];
+  fields.forEach(field => filters.push(new Filter(modifier, type, field)));
+  console.log(filters);
+  return filters;
 }
