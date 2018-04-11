@@ -1,7 +1,7 @@
 {
   "groups" : [
     {
-      "title": "Hvordan ble brannen oppdaget",
+      "title": "Hvordan ble brannen oppdaget?",
       "field": "indexed.sporsmal.225.tekst.not_analyzed",
       "answers": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "title": "Hva startet brannen i",
+      "title": "Hva startet brannen i?",
       "field": "indexed.sporsmal.229.tekst.not_analyzed",
       "answers": [
         {
@@ -60,6 +60,82 @@
         },
         {
           "name": "annet startobjekt"
+        }
+      ]
+    },
+    {
+      "title": "I hvilket rom startet brannen?",
+      "field": "indexed.sporsmal.227.tekst.not_analyzed",
+      "answers": [
+        {
+          "name": "annet"
+        },
+        {
+          "name": "fellesareal"
+        },
+        {
+          "name": "forsamlingslokale"
+        },
+        {
+          "name": "fyrrom"
+        },
+        {
+          "name": "gang",
+          "doc_count": 170
+        },
+        {
+          "name": "garasje"
+        },
+        {
+          "name": "heisrom"
+        },
+        {
+          "name": "hulrom i konstruksjon"
+        },
+        {
+          "name": "kjeller"
+        },
+        {
+          "name": "kjøkken"
+        },
+        {
+          "name": "kontor"
+        },
+        {
+          "name": "lager"
+        },
+        {
+          "name": "loft"
+        },
+        {
+          "name": "produksjonslokale"
+        },
+        {
+          "name": "salgslokale"
+        },
+        {
+          "name": "skorstein"
+        },
+        {
+          "name": "soverom"
+        },
+        {
+          "name": "stue"
+        },
+        {
+          "name": "tavlerom"
+        },
+        {
+          "name": "trapperom"
+        },
+        {
+          "name": "ukjent"
+        },
+        {
+          "name": "utvendig"
+        },
+        {
+          "name": "våtrom"
         }
       ]
     }

@@ -14,7 +14,8 @@ import kommuneFile from '../data/kommuner';
 import brannvesenFile from '../data/brannvesen';
 import hundreOgTiSentralFile from '../data/hundreOgTiSentral';
 import revidertHendelsesTypeFile from '../data/revidertHendelsesType';
-import bakgrunnOgOmfang from '../data/bakgrunnOgOmfang';
+import bakgrunnOgOmfangFile from '../data/bakgrunnOgOmfang';
+import stedOgBygningFile from '../data/stedOgBygning';
 
 export default class DeclaredFilterDefinitions {
   constructor() {
@@ -104,15 +105,15 @@ export default class DeclaredFilterDefinitions {
     );
     this.bakgrunnOgOmfang = new FilterDefinition(
       'Bakgrunn og Omfang',
-      mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfang.groups),
+      mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfangFile.groups),
       Type.category,
       categoryFilters(filters.modifier.should, filters.type.term, filters.field.bakgrunnOgOmfang)
     );
-    this.stedOgBygningDummy = new FilterDefinition(
+    this.stedOgBygning = new FilterDefinition(
       'Sted og Bygning',
-      mapSortFormatAndEnrichNestedQuestionEntry(bakgrunnOgOmfang.groups),
+      mapSortFormatAndEnrichNestedQuestionEntry(stedOgBygningFile.groups),
       Type.category,
-      new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
+      categoryFilters(filters.modifier.should, filters.type.term, filters.field.stedOgBygning)
     );
     this.innsatsOgOppgaverDummy = new FilterDefinition(
       'Innsats og Oppgaver',

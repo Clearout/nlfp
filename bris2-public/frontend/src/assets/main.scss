@@ -79,6 +79,9 @@ $gray-100: $gray-100;
     color: $gray-600 !important;
     font-weight: 400;
   }
+  :active {
+    box-shadow: none !important;
+  }
 }
 
 .inner-container {  

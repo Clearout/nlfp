@@ -48,21 +48,15 @@ export default {
     },
     onChange() {
       this.filterDefiniton.filter.forEach(filter => (filter.value = []));
-      console.log(this.filterDefiniton.filter);
       this.values.forEach(value => {
-        console.log('current value: ', value);
         this.filterDefiniton.filter.filter(f => f.field === value.field).forEach(f => {
-          console.log(f.field);
-          console.log(value.field);
           f.value.push(value.name);
         });
       });
       this.emitUpdate();
     },
     emitUpdate() {
-      this.filterDefiniton.filter
-        .filter(f => f.value != null && f.value != '')
-        .forEach(filter => this.$emit('filterUpdate', filter));
+      this.filterDefiniton.filter.forEach(filter => this.$emit('filterUpdate', filter));
     }
   },
   watch: {

@@ -1,0 +1,46 @@
+{
+  "groups" : [
+    {
+      "title": "Hvilken type bolig var det?",
+      "field": "indexed.sporsmal.209.tekst.not_analyzed",
+      "answers": [
+        {
+          "name": "boligblokk"
+        },
+        {
+          "name": "boligbrakke"
+        },
+        {
+          "name": "bygning for bofellessskap"
+        },
+        {
+          "name": "enebolig"
+        },
+        {
+          "name": "fritidsbolig"
+        },
+        {
+          "name": "småhus unntatt enebolig"
+        }
+      ]
+    },
+    {
+      "title": "Hva er bygningens hovedfunksjon?",
+      "field": "indexed.sporsmal.208.tekst.not_analyzed",
+      "answers": [
+        {
+          "name": "andre bygninger"
+        },
+        {
+          "name": "annen næring"
+        },
+        {
+          "name": "bolig"
+        },
+        {
+          "name": "næring som fungerer som bolig"
+        }
+      ]
+    }
+  ]
+}

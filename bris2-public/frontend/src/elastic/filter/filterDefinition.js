@@ -22,7 +22,7 @@ export default class FilterDefinitions {
         _.spredningDummy,
         _.ressurserDummy,
         _.farligStoffOgForurensningDummy,
-        _.stedOgBygningDummy,
+        _.stedOgBygning,
         _.bakgrunnOgOmfang,
         _.personDummy,
         _.personskaderOgOmkomneDummy,

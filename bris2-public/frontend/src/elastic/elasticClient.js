@@ -1,5 +1,5 @@
 const host = 'http://localhost:3000';
-const logType = 'trace';
+const logType = 'error';
 const index = 'sambas';
 const type = 'OppdragRapport';
 
@@ -12,18 +12,19 @@ export default class ElasticClient {
     });
   }
 
-  search(query, that, callback) {
+  search(query, size, that, callback) {
     this.client
       .search({
         index: index,
         type: type,
         body: {
-          query: query.buildQuery()
+          query: query.buildQuery(),
+          size: size
         }
       })
       .then(
         function(response) {
-          callback(that, response.hits.hits);
+          callback(that, response);
         },
         function(error) {
           console.trace(error.message);

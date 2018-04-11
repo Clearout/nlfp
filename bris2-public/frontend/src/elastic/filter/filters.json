@@ -18,7 +18,12 @@
     "registrertBrannvesen": "indexed.oppdrag.registrertBrannvesen",
     "bakgrunnOgOmfang": [
       "indexed.sporsmal.225.tekst.not_analyzed",
-      "indexed.sporsmal.229.tekst.not_analyzed"
+      "indexed.sporsmal.229.tekst.not_analyzed",
+      "indexed.sporsmal.227.tekst.not_analyzed"
+    ],
+    "stedOgBygning": [
+      "indexed.sporsmal.209.tekst.not_analyzed",
+      "indexed.sporsmal.208.tekst.not_analyzed"
     ]
   },
   "modifier": {

@@ -7,7 +7,7 @@
         initialSearch="">
       </search-box>
       <br>
-      <h4>Antall treff: {{count}}</h4>
+      <h4>Antall treff: {{total}}</h4>
     </div>
     <div class="center">
       <div v-show="isOpen">
@@ -43,7 +43,10 @@
         </b-btn>
         <hr class="show-hr">
       </div>
+      <br>
       <search-result
+        :hits="hits"
+        :total="total"
       >
       </search-result>
     </div>
@@ -62,9 +65,10 @@ import Query from '../elastic/query';
 import ElasticClient from '../elastic/elasticClient';
 
 let filterDefinitions = new FilterDefinitions();
-let updateCount = function(that, response) {
-  console.log(response);
-  that.count = response ? response.count : 0;
+let updateResult = function(that, response) {
+  let result = response ? response.hits : { hits: null, total: 0 };
+  that.total = result.total;
+  that.hits = result.hits;
 };
 
 export default {
@@ -72,12 +76,13 @@ export default {
   components: { SearchBox, FilterSection, SearchResult },
   data() {
     return {
-      msg: 'Search',
       filterDefinitons: filterDefinitions,
       query: new Query(),
       client: new ElasticClient(),
-      count: 0,
+      size: 10,
+      total: 0,
       reset: 0,
+      hits: [],
       isOpen: true
     };
   },
@@ -85,13 +90,13 @@ export default {
     updateFilters(filter) {
       this.query.updateFilters(filter);
       let that = this;
-      this.client.count(this.query, this, updateCount);
+      this.client.search(this.query, this.size, this, updateResult);
     },
     resetFilters() {
       this.reset++;
       this.query.resetFilters();
       let that = this;
-      this.client.count(this.query, this, updateCount);
+      this.client.search(this.query, this.size, this, updateResult);
     },
     toggle() {
       this.isOpen = !this.isOpen;
@@ -99,7 +104,7 @@ export default {
   },
   mounted() {
     let that = this;
-    this.client.count(this.query, this, updateCount);
+    this.client.search(this.query, this.size, this, updateResult);
   }
 };
 </script>
