@@ -2,12 +2,16 @@
   <div class="grid-layout">
     <div class="top">
       <search-box
-        @resetFilter="resetFilters()"
-        placeholder="Finn tallene du leter etter ved å søke her" 
+        placeholder="Søk her etter tall og statistikk" 
         initialSearch="">
       </search-box>
       <br>
-      <h4>Antall treff: {{total}}</h4>
+      <b-col cols="2" offset="5">
+        <b-btn @click="resetFilters" class="reset btn-light">
+          <i class="fa fa-minus-circle"></i>
+          Nullstill søk og filter
+        </b-btn>
+      </b-col>
     </div>
     <div class="center">
       <div v-show="isOpen">
@@ -163,5 +167,8 @@ hr {
 }
 .show-filters:focus {
   box-shadow: 0 0 0 0 $gray-500 !important;
+}
+.reset {
+  background-color: $white;
 }
 </style>

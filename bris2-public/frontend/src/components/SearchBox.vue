@@ -13,12 +13,6 @@
         <i class="fa fa-search search-icon"></i>
       </b-btn>
     </b-col>
-    <b-col cols="2">
-      <b-btn @click="resetFilter" class="reset btn-light">
-        <i class="fa fa-minus-circle"></i>
-        Nullstill søk og filter
-      </b-btn>
-    </b-col>
   </div>
 </template>
 
@@ -34,11 +28,7 @@ export default {
     };
   },
   methods: {
-    ping() {},
-    resetFilter() {
-      this.search = '';
-      this.$emit('resetFilter', true);
-    }
+    ping() {}
   }
 };
 </script>
@@ -46,12 +36,6 @@ export default {
 <style scoped lang="scss">
 @import '../assets/main';
 @import '../assets/custom-bs';
-
-.reset {
-  background-color: $white;
-  border: 0;
-  box-shadow: 0;
-}
 
 #searchbox-root {
   display: flex;

@@ -12,43 +12,43 @@
             </svg>
         </b-navbar-brand>
         <b-navbar-brand to="/" class="divider-vertical-left pl-3">
-          Dashboard
+          Dashbord
         </b-navbar-brand>
         <b-navbar-brand to="/search" class="divider-vertical-left pl-3">
-          Search
+          Søk
         </b-navbar-brand>
-        <b-navbar-brand to="/report" class="divider-vertical-left pl-3">
-          Report
-        </b-navbar-brand>
+        <!--<b-navbar-brand to="/report" class="divider-vertical-left pl-3">
+          Rapport
+        </b-navbar-brand>-->
       </b-navbar>
     </b-container>
   </div>
 </template>
 
 <script>
-    export default {
-        name: 'NavBar'
-    }
+export default {
+  name: 'NavBar'
+};
 </script>
 
 <style scoped lang="scss">
-  @import "~bootstrap/scss/bootstrap";
-  @import "../assets/main";
+@import '~bootstrap/scss/bootstrap';
+@import '../assets/main';
 
-  .masthead { 
-    background-color: $white;
-    border-bottom: 1px solid $gray-500;
-    a.navbar-brand {
-      color: $gray-700;
-    }
-    a.navbar-brand:hover {      
-      color: $bris-color;
-    }    
-    a.navbar-brand:active {
-      color: $bris-color;
-    }
-    a.navbar-brand:focus {
-      color: $bris-color;
-    }
+.masthead {
+  background-color: $white;
+  border-bottom: 1px solid $gray-500;
+  a.navbar-brand {
+    color: $gray-700;
   }
+  a.navbar-brand:hover {
+    color: $bris-color;
+  }
+  a.navbar-brand:active {
+    color: $bris-color;
+  }
+  a.navbar-brand:focus {
+    color: $bris-color;
+  }
+}
 </style>

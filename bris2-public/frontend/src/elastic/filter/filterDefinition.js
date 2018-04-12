@@ -117,6 +117,5 @@ export function mapSortFormatAndEnrichNestedQuestionEntry(array) {
 export function categoryFilters(modifier, type, fields) {
   let filters = [];
   fields.forEach(field => filters.push(new Filter(modifier, type, field)));
-  console.log(filters);
   return filters;
 }

@@ -7,13 +7,14 @@
 <script>
 export default {
   name: 'Report',
-  data () {
+  data() {
     return {
       msg: 'Report'
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
+
 </style>
