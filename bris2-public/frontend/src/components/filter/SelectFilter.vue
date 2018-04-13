@@ -3,6 +3,7 @@
     <multi-select 
       :options="options"
       :selected-options="items"
+      placeholder="Velg eller søk..."
       x:placeholder="filterDefiniton.title"
       @select="onSelect">
     </multi-select>

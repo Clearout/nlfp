@@ -8,7 +8,7 @@
       group-values="answers" 
       group-label="title" 
       :group-select="true" 
-      placeholder=""
+      placeholder="Velg eller søk..."
       track-by="name" 
       label="name"
       selectLabel="Trykk for å velge"
