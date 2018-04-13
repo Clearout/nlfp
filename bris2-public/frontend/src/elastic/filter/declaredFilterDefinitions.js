@@ -57,7 +57,7 @@ export default class DeclaredFilterDefinitions {
     );
     this.hendelsesType = new FilterDefinition(
       'Opprinnelig Hendelsestype',
-      mapSortFormatEntry(revidertHendelsesTypeFile.revidertHendelsesType, 'key', 'key'),
+      null, // mapSortFormatEntry(revidertHendelsesTypeFile.revidertHendelsesType, 'key', 'key'),
       Type.select,
       new Filter(filters.modifier.should, filters.type.term, filters.field.hendelsesType)
     );
