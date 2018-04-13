@@ -164,7 +164,7 @@ export default class DeclaredFilterDefinitions {
       new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)
     );
     this.vurderingAvHendelseDummy = new FilterDefinition(
-      'Vurdering av Hendelse og Håndtering',
+      'Vurdering av Hendelse',
       null,
       Type.category,
       new Filter(filters.modifier.must, filters.type.term, filters.field.bakgrunnOgOmfang)

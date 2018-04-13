@@ -28,7 +28,7 @@ export default class FilterDefinitions {
         _.personskaderOgOmkomneDummy,
         _.reddedeDummy,
         _.andreSkaderDummy,
-        _.innsatsOgOppgaverDummy,
+        _.vurderingAvHendelseDummy,
         _.politiDummy
       ]
     };
