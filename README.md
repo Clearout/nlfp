@@ -1,33 +1,12 @@
-# Nasjonal løsning for Farlige Produkter (NLFP)
+# Proof of concept for BRIS2 statistics module
 
-The main purpose of the project is to prevent damage to people and material by establishing a website 
-where quality assured information about dangerous products is published. 
+The purpose of this POC is to test current concepts, dynamic filters and query generation in ElasticSearch on live data.
+The POC was used in UX user testing of the Search & Filters concepts.
 
-The project will be an extension of the current DSB website [Farlige Produkter](https://www.farligeprodukter.no/)
-containing the products DSB are responsible for. 
-The new website is a collaborative project for several authorities responsible for dangerous products in Norway.
-Assembling this information will give the Norwegian citizens one common site to go to for information about these dangerous products, 
-making it easier to stay updated on products posing a risk to health and safety.
+Further content, build instructions and code explanations can be found in README's in their appropraite locations.
 
+## Repository contents
 
-## Contents
-* nlfp-public - Public website for NLFP
-* nlfp-admin - Administrative portal for the authorities
-* nlfp-api - Open API
-
-
-## Contributing
-TBD
-
-## Versioning
-TBD
-
-## Authors
-See also the list of [contributors](https://github.com/dsb-norge/nlfp/graphs/contributors) who participated in this project.
-
-## License
-TBD
-
-## Acknowledgments
-The project was granted financial support from [DIFI](https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/finansiering-av-ikt-prosjekter/medfinansiering-av-digitaliseringsprosjekt/prosjekt-som-har-fatt-stotte-i-2017) in 2017.
-
+* bris2-public - Contains POC code & documentation
+* nlfp-admin - Can be ignored - artifact from the project this was forked from and not used
+* nlfp-api - Can be ignored - artifact from the project this was forked from and not used
