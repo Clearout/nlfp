@@ -1,13 +1,14 @@
 # POC BRIS2 Vue app
 See README inside folders for descriptions of functionality.
 
-
+## Code
+See the **"/src"** folder for Vue app code & documentation.
 
 ## Build Setup
 
 For hot reload, start backend (NlfpPublicApplication) as normally and then start frontend:
 
-``` bash
+```bash
 # Install and run
 yarn && yarn dev
 
